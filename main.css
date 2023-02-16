@@ -115,17 +115,22 @@ section div {
 }
 
 section div div {
-  position: relative;
+  position: absolute;
   width: 1em;
   height: 1em;
   border-radius: 50%;
   background-color: #f00;
-  animation: fireworks 1s ease-out infinite;
+  animation: fireworks 2s ease-out infinite;
 }
 
 @keyframes fireworks {
   0% {
     opacity: 1;
+    transform: scale(.5);
+    top: 50%;
+    left: 50%;
+  }
+  10% {
     transform: scale(1);
   }
   50% {
