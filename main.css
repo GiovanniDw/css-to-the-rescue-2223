@@ -6,15 +6,16 @@
 
 /* Variables */
 :root {
-   color-scheme: light dark;
+  color-scheme: light dark;
   --color-white: #fff;
   --color-black: #000;
 
-  --color-red: red;
-  --color-blue: blue;
-  --color-green: green;
-  --color-yellow: yellow;
-
+  --color-red: #FF4B2B;
+  --color-blue: rgb(42, 95, 241);
+  --color-blue-light: #1CB5E0;
+  --color-blue-dark: #000046;
+  --color-green: #5EC08C;
+  --color-yellow: #ffff1c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,36 +26,62 @@
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-    --color-background: var(var(--color-white))
+  :root {
+    --color-background: var(--color-blue);
     --color-text: var(var(--color-black));
   }
 }
-
-
 
 body {
   background-color: var(--color-background);
   color: var(--color-text);
   height: 100vw;
   width: 100vw;
-  background: radial-gradient(circle, rgba(195,88,34,1) 0%, rgba(83,43,193,1) 4%, rgba(193,191,52,1) 8%, rgba(69,65,193,1) 18%, rgba(193,178,79,1) 29%, rgba(83,43,193,1) 35%, rgba(115,191,139,1) 43%, rgba(130,191,129,1) 49%, rgba(83,43,193,1) 50%, rgba(195,88,34,1) 62%, rgba(186,189,91,1) 72%, rgba(205,188,78,1) 80%, rgba(217,188,70,1) 85%, rgba(227,188,63,1) 89%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-background);
+  /* background: radial-gradient(
+    circle,
+    rgba(195, 88, 34, 1) 0%,
+    rgba(83, 43, 193, 1) 4%,
+    rgba(193, 191, 52, 1) 8%,
+    rgba(69, 65, 193, 1) 18%,
+    rgba(193, 178, 79, 1) 29%,
+    rgba(83, 43, 193, 1) 35%,
+    rgba(115, 191, 139, 1) 43%,
+    
+    rgba(83, 43, 193, 1) 50%,
+    rgba(195, 88, 34, 1) 62%,
+    rgba(186, 189, 91, 1) 72%,
+    rgba(130, 191, 129, 1) 75%,
+    rgba(205, 188, 78, 1) 80%,
+    rgba(83, 43, 193, 1) 85%,
+    rgba(227, 188, 63, 1) 100%
+  ); */
+}
 
+
+section{
+  min-height: 100cqb;
+  border:1px solid red;
+}
+
+section:nth-child(1) {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
 }
 
 
 main section ul {
- display: flex;
- width: 100%;
- justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-
-
 
 main section ul li {
   list-style: none;
-} 
-
+}
 
 main section ul li {
   background-color: red;
@@ -81,18 +108,16 @@ main section ul li {
   }
 }
 
-
-
 section div {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
 section div div {
-   position: absolute;
-  width: 10px;
-  height: 10px;
+  position: relative;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   background-color: #f00;
   animation: fireworks 1s ease-out infinite;
@@ -112,7 +137,6 @@ section div div {
     transform: scale(3);
   }
 }
-
 
 section div div:nth-child(1) {
   top: 50%;
@@ -140,5 +164,4 @@ section div div:nth-child(5) {
   top: 75%;
   left: 25%;
   background: var(--color-blue);
-  
 }
