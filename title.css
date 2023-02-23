@@ -1,7 +1,7 @@
-section h1 {
-  font-size: 24px;
+section[name='second-fw'] h1 {
+  font-size: 3em;
   align-self: center;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
    text-transform: uppercase;
   background-size: auto auto;
@@ -19,13 +19,18 @@ section h1 {
     #fff800 100%
   );
   display: inline-block;
-      font-size: 190px;
+  text-align: center;
+      /* font-size: 190px; */
 }
 
-
+section[name='second-fw'] {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
 @media (prefers-color-scheme: dark) {
-section h1 {
+section[name='second-fw'] h1 {
   /* background: none; */
   background-image: radial-gradient(
     circle,

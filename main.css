@@ -12,7 +12,7 @@
 
   --color-red: #ff4b2b;
   --color-blue: rgb(42, 95, 241);
-  --color-blue-light: #6CC1EF;
+  --color-blue-light: #6cc1ef;
   --color-blue-dark: #000046;
   --color-green: #5ec08c;
   --color-yellow: #ffff1c;
@@ -39,7 +39,8 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   min-height: 100vw;
-  max-width: 100vw;
+  /* max-width: 75em; */
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--color-background);
@@ -132,98 +133,140 @@ section input[value='firework']:checked {
 section input[value='firework']:checked ~ div > div {
   animation: fireworks 3s ease-out infinite;
 }
+
+section input[value='firework']:checked ~ div div > div {
+  animation: fireworks-ception 3s ease-out infinite;
+}
+section input[value='firework']:checked ~ section {
+  
+}
+
+section[name='first-fw']:has(input[value='firework']) {
+  background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
+   transition: background 1s ease-out;  
+
+}
+
+section[name='first-fw']:has(input[value='firework']:checked) {
+  /* background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%); */
+background: linear-gradient(180deg, #000000 0%, #0E01AC 100%);
+ transition: background 1s ease-out;  
+}
+
+
+
+
+
 section[name='first-fw'] div div {
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   background-color: #f00;
 }
 
 section[name='first-fw'] div div div {
-position: absolute;
-/* animation-delay: 2s; */
-opacity: 0;
-width: 1em;
+  position: absolute;
+  animation-delay: 1s;
+  opacity: 0;
+  width: 1em;
   height: 1em;
   /* top: 50%; */
   /* left: 50%; */
-/* left: 50%; */
-/* top: 50%; */
-animation: fireworks-ception 3s ease-out infinite;
-
-
+  /* left: 50%; */
+  /* top: 50%; */
 }
-section div div:not(:nth-child(6)) {
+section[name='first-fw'] div div:not(:nth-child(6)),
+section[name='first-fw'] div div div {
   opacity: 0;
 }
 
-section div div:nth-child(1), section div div div:nth-child(1) {
+section[name='first-fw'] div div:nth-child(1),
+section[name='first-fw'] div div div:nth-child(1) {
   top: 50%;
   left: 50%;
   background: var(--color-green);
 }
 
-section div div:nth-child(2),section div div:nth-child(2) {
+section[name='first-fw'] div div:nth-child(2),
+section[name='first-fw'] div div div:nth-child(2) {
   top: 10%;
   left: 50%;
   background: var(--color-green);
 }
-section div div:nth-child(3),section div div:nth-child(3) {
+section[name='first-fw'] div div:nth-child(3),
+section[name='first-fw'] div div div:nth-child(3) {
   top: 25%;
   left: 75%;
   background: var(--color-purple);
 }
-section div div:nth-child(4),section div div:nth-child(4) {
+section[name='first-fw'] div div:nth-child(4),
+section[name='first-fw'] div div div:nth-child(4) {
   top: 50%;
   left: 90%;
   background: var(--color-green);
 }
-section div div:nth-child(5),section div div:nth-child(5) {
+section[name='first-fw'] div div:nth-child(5),
+section[name='first-fw'] div div div:nth-child(5) {
   top: 75%;
   left: 75%;
   background-color: #1cb5e0;
 }
 
-section div div:nth-child(6),section div div:nth-child(6) {
+section[name='first-fw'] div div:nth-child(6),
+section[name='first-fw'] div div div:nth-child(6) {
   top: 90%;
   left: 50%;
   background: black;
+  background-image: url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fireworks/Firework_Rocket_Transparent_Image.png?m=1551482318');
 }
 
-section div div:nth-child(7),section div div:nth-child(7) {
+section[name='first-fw'] div div:nth-child(7),
+section[name='first-fw'] div div div:nth-child(7) {
   top: 75%;
   left: 25%;
   background: var(--color-orange);
 }
 
-section div div:nth-child(8),section div div:nth-child(8) {
+section[name='first-fw'] div div:nth-child(8),
+section[name='first-fw'] div div div:nth-child(8) {
   top: 50%;
   left: 10%;
   background: var(--color-yellow);
 }
-section div div:nth-child(9),section div div:nth-child(9) {
+section[name='first-fw'] div div:nth-child(9),
+section[name='first-fw'] div div div:nth-child(9) {
   top: 25%;
   left: 25%;
   /* background: var(--color-blue); */
 }
 
+section[name='first-fw'] footer {
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  bottom: 0;
+  height: 4em;
+  width: 100%;
+  background: var(--color-green);
+}
+
+
 @keyframes fireworks {
   0% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.2);
     top: 90%;
     left: 50%;
   }
   10% {
     opacity: 1;
-    transform: scale(0.5);
+    transform: scale(0.2);
     top: 50%;
     left: 50%;
   }
   20% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   50% {
     opacity: 0.8;
@@ -231,12 +274,12 @@ section div div:nth-child(9),section div div:nth-child(9) {
   }
   90% {
     opacity: 0.5;
-    transform: scale(2);
+    transform: scale(1);
     background-color: transparent;
   }
   100% {
     opacity: 0;
-    transform: scale(2);
+    transform: scale(4);
     background-color: transparent;
   }
 }
@@ -251,23 +294,28 @@ section div div:nth-child(9),section div div:nth-child(9) {
   10% {
     opacity: 0;
     transform: scale(0.5);
-    top: 50%;
-    left: 50%;
   }
   20% {
     opacity: 0;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   50% {
     opacity: 0;
-    transform: scale(.1);
+    transform: scale(0.1);
+  }
+  70% {
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5);
   }
   80% {
-    opacity: 1;
-    transform: scale(.5);
+    /* z-index: 999; */
+    opacity: 0.5;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
-    transform: scale(.5);
+    transform: scale(1);
   }
 }
