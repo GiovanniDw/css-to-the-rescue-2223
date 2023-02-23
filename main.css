@@ -38,7 +38,7 @@ body {
   font-size: 16px;
   background-color: var(--color-background);
   color: var(--color-text);
-  min-height: 100vw;
+  /* min-height: 100vw; */
   /* max-width: 75em; */
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -62,6 +62,16 @@ body {
     rgba(83, 43, 193, 1) 85%,
     rgba(227, 188, 63, 1) 100%
   ); */
+}
+
+main {
+  /* height: fit-content; */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+main section {
+  scroll-snap-align: center;
 }
 
 section {
@@ -112,21 +122,27 @@ main section ul li {
 
 section div {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
 }
 section input {
   z-index: 999;
+  display: block;
 }
 
 section input[value='firework'] {
   position: absolute;
-  bottom: 2em;
+  bottom: 5em;
+  left: 50%;
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
 }
 
 section input[value='firework']:checked {
-  height: 1em;
-  width: 1em;
+  /* height: 1em; */
+  /* width: 1em; */
   border: 1px solid red;
 }
 
@@ -138,26 +154,30 @@ section input[value='firework']:checked ~ div div > div {
   animation: fireworks-ception 3s ease-out infinite;
 }
 section input[value='firework']:checked ~ section {
-  
 }
 
 section[name='first-fw']:has(input[value='firework']) {
-  background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
-   transition: background 1s ease-out;  
-
+  position: relative;
+  width: auto;
+  background: linear-gradient(
+    180deg,
+    #0e00ac 0%,
+    #222abb 10.82%,
+    #65b2ea 64.47%,
+    #6cc1ef 83.22%,
+    #83f0ff 100%
+  );
+  transition: background 1s ease-out;
 }
 
 section[name='first-fw']:has(input[value='firework']:checked) {
   /* background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%); */
-background: linear-gradient(180deg, #000000 0%, #0E01AC 100%);
- transition: background 1s ease-out;  
+  background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
+  transition: background 1s ease-out;
 }
 
-
-
-
-
 section[name='first-fw'] div div {
+  z-index: 1;
   position: absolute;
   width: 1em;
   height: 1em;
@@ -247,9 +267,9 @@ section[name='first-fw'] footer {
   bottom: 0;
   height: 30em;
   width: 100%;
+  z-index: 0;
   background: var(--color-green);
 }
-
 
 @keyframes fireworks {
   0% {
@@ -317,5 +337,93 @@ section[name='first-fw'] footer {
   100% {
     opacity: 0;
     transform: scale(1);
+  }
+}
+
+section[name='third-fw'] {
+  background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
+  transition: background 1s ease-out;
+  position: relative;
+  background-image: linear-gradient(black, rgb(8, 8, 70));
+  height: 100vh;
+  overflow: hidden;
+}
+
+section[name='third-fw'] span:nth-child(1),
+section[name='third-fw'] span:nth-child(2),
+section[name='third-fw'] span:nth-child(3),
+section[name='third-fw'] span:nth-child(4) {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-image: radial-gradient(yellow, black), radial-gradient(red, black),
+    radial-gradient(rgb(255, 0, 149), black),
+    radial-gradient(rgb(153, 0, 255), black),
+    radial-gradient(rgb(255, 0, 149), black),
+    radial-gradient(rgb(255, 0, 170), black),
+    radial-gradient(rgb(0, 255, 170), black),
+    radial-gradient(rgb(153, 0, 255), black),
+    radial-gradient(rgb(255, 0, 149), black),
+    radial-gradient(rgb(0, 174, 255), black),
+    radial-gradient(rgb(0, 255, 170), black),
+    radial-gradient(rgb(153, 0, 255), black),
+    radial-gradient(rgb(0, 255, 170), black),
+    radial-gradient(rgb(153, 0, 255), black),
+    radial-gradient(rgb(255, 0, 149), black),
+    radial-gradient(rgb(200, 255, 0), black),
+    radial-gradient(rgb(0, 255, 170), black),
+    radial-gradient(rgb(0, 140, 255), black),
+    radial-gradient(rgb(255, 217, 0), black),
+    radial-gradient(rgb(0, 140, 255), black), radial-gradient(red, black),
+    radial-gradient(rgb(166, 255, 0), black),
+    radial-gradient(rgb(166, 255, 0), black),
+    radial-gradient(rgb(255, 0, 149), black);
+  background-position: 95% 30%, 50% 0%, 100% 10%, 20% 10%, 50% 50%, 30% 30%,
+    0% 50%, 80% 25%, 50% 30%, 80% 50%, 100% 60%, 80% 80%, 20% 85%, 0 25%,
+    55% 65%, 85% 0, 50% 100%, 70% 90%, 10% 70%, 70% 70%, 30% 70%, 20% 40%,
+    40% 90%, 90% 90%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  animation: fireworks-bg 3s infinite;
+}
+
+section[name='third-fw'] span:nth-child(2) {
+  top: 50%;
+  left: 30%;
+  animation-delay: 0.5s;
+}
+section[name='third-fw'] span:nth-child(3) {
+  top: 20%;
+  left: 70%;
+  animation-delay: 0.75s;
+}
+section[name='third-fw'] span:nth-child(4) {
+  top: 70%;
+  left: 20%;
+  animation-delay: 1.75s;
+}
+
+@keyframes fireworks-bg {
+  0% {
+    transform: translateY(100vh);
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  75% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
   }
 }
