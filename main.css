@@ -66,7 +66,7 @@ body {
 
 section {
   min-height: 100cqb;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 section:nth-child(1) {
@@ -245,7 +245,7 @@ section[name='first-fw'] footer {
   position: absolute;
   border-radius: 50% 50% 0 0;
   bottom: 0;
-  height: 4em;
+  height: 30em;
   width: 100%;
   background: var(--color-green);
 }
