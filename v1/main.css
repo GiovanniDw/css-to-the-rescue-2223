@@ -129,80 +129,69 @@ section input[value='firework']:checked {
   border: 1px solid red;
 }
 
-section input[value='firework']:checked ~ div > div {
+section input[value='firework']:checked ~ div div {
   animation: fireworks 3s ease-out infinite;
 }
 section[name='first-fw'] div div {
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   background-color: #f00;
 }
 
-section[name='first-fw'] div div div {
-position: absolute;
-/* animation-delay: 2s; */
-opacity: 0;
-width: 1em;
-  height: 1em;
-  /* top: 50%; */
-  /* left: 50%; */
-/* left: 50%; */
-/* top: 50%; */
-animation: fireworks-ception 3s ease-out infinite;
 
 
-}
+
 section div div:not(:nth-child(6)) {
   opacity: 0;
 }
 
-section div div:nth-child(1), section div div div:nth-child(1) {
+section div div:nth-child(1) {
   top: 50%;
   left: 50%;
   background: var(--color-green);
 }
 
-section div div:nth-child(2),section div div:nth-child(2) {
+section div div:nth-child(2) {
   top: 10%;
   left: 50%;
   background: var(--color-green);
 }
-section div div:nth-child(3),section div div:nth-child(3) {
+section div div:nth-child(3) {
   top: 25%;
   left: 75%;
   background: var(--color-purple);
 }
-section div div:nth-child(4),section div div:nth-child(4) {
+section div div:nth-child(4) {
   top: 50%;
   left: 90%;
   background: var(--color-green);
 }
-section div div:nth-child(5),section div div:nth-child(5) {
+section div div:nth-child(5) {
   top: 75%;
   left: 75%;
   background-color: #1cb5e0;
 }
 
-section div div:nth-child(6),section div div:nth-child(6) {
+section div div:nth-child(6) {
   top: 90%;
   left: 50%;
   background: black;
 }
 
-section div div:nth-child(7),section div div:nth-child(7) {
+section div div:nth-child(7) {
   top: 75%;
   left: 25%;
   background: var(--color-orange);
 }
 
-section div div:nth-child(8),section div div:nth-child(8) {
+section div div:nth-child(8) {
   top: 50%;
   left: 10%;
   background: var(--color-yellow);
 }
-section div div:nth-child(9),section div div:nth-child(9) {
+section div div:nth-child(9) {
   top: 25%;
   left: 25%;
   /* background: var(--color-blue); */
@@ -231,43 +220,9 @@ section div div:nth-child(9),section div div:nth-child(9) {
   }
   90% {
     opacity: 0.5;
-    transform: scale(2);
-    background-color: transparent;
   }
   100% {
     opacity: 0;
     transform: scale(2);
-    background-color: transparent;
-  }
-}
-
-@keyframes fireworks-ception {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-    top: 90%;
-    left: 50%;
-  }
-  10% {
-    opacity: 0;
-    transform: scale(0.5);
-    top: 50%;
-    left: 50%;
-  }
-  20% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(.1);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(.5);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(.5);
   }
 }
