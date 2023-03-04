@@ -1,9 +1,19 @@
-section[name='second-fw'] h1 {
+section[name='second-fw'] div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4vw;
+}
+
+section[name='second-fw'] div h1 {
+  font-variation-settings: 'XROT' 20, 'YROT' 30;
   font-size: 3em;
   align-self: center;
   width: 100%;
   text-align: center;
-   text-transform: uppercase;
+  /* text-transform: uppercase; */
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -13,40 +23,71 @@ section[name='second-fw'] h1 {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: radial-gradient(
-    circle,
-    #fff800 0%,
-    #fff800 100%
-  );
+  background-image: radial-gradient(circle, #fff800 0%, #fff800 100%);
   display: inline-block;
   text-align: center;
-      /* font-size: 190px; */
+  animation: FontVars 5s infinite linear both;
+
+  /* font-size: 190px; */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section[name='second-fw'] div h1 {
+    animation: FontVars 5s infinite linear both;
+  }
 }
 
 section[name='second-fw'] {
   display: flex;
-  align-content: center;
+  /* align-content: center; */
   justify-content: center;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: dark) {
-section[name='second-fw'] h1 {
-  /* background: none; */
-  background-image: radial-gradient(
-    circle,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-    animation: textclip 2s linear infinite;
+  section[name='second-fw'] div h1 {
+    /* background: none; */
+    background-image: radial-gradient(
+      circle,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    animation: textclip 2s linear infinite, FontVars 3s infinite linear both;
+    /* animation: FontVars 3s infinite linear both; */
+  }
+
+  
 }
+
+
 
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
+    to {
+      background-position: 200% center;
+    }
   }
-}
 
+@keyframes FontVars {
+  0% {
+    font-variation-settings: 'XROT' -40, 'YROT' 1;
+  }
+
+  25% {
+    font-variation-settings: 'XROT' 10, 'YROT' -40;
+  }
+
+  50% {
+    font-variation-settings: 'XROT' 40, 'YROT' 40;
+  }
+
+  75% {
+    font-variation-settings: 'XROT' 10, 'YROT' -40;
+  }
+
+  100% {
+    font-variation-settings: 'XROT' -40, 'YROT' 1;
+  }
 }
