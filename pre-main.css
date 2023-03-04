@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,7 +31,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-black);
-    --color-text: var(var(--color-white));
+    --color-text: var(--color-white);
   }
 }
 
@@ -43,7 +42,8 @@
   }
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -93,16 +93,18 @@ main {
 
 main section {
   position: relative;
-  scroll-snap-align: center;
+
   /* padding: 1em; */
-  
-  border-radius: 1em;
+
+  /* border-radius: 1em; */
 }
 
 section {
+  scroll-snap-align: center;
   min-height: 100cqb;
   /* border: 1px solid red; */
   container-type: inline-size;
+  border-bottom: 1px solid red;
 }
 
 section:nth-child(1) {
@@ -206,11 +208,9 @@ section input[value='firework']:checked ~ div div > div {
           animation: fireworks-ception 3s ease-out infinite;
 }
 section input[value='firework']:checked ~ section {
-
-height: 2em;
-width: 2em;
-background: #000;
-
+  height: 2em;
+  width: 2em;
+  background: #000;
 }
 
 section[name='first-fw']:has(input[value='firework']) {
@@ -246,10 +246,32 @@ section[name='first-fw']:has(input[value='firework']) {
   transition: background 1s ease-out;
 }
 
-section[name='first-fw']:has(input[value="firework"]:checked) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0E00AC), color-stop(10.82%, #222ABB), color-stop(64.47%, #65B2EA), color-stop(83.22%, #6CC1EF), to(#83F0FF));
-  background: -o-linear-gradient(top, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
-  background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
+section[name='first-fw']:has(input[value='firework']:checked) {
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(#0e00ac),
+    color-stop(10.82%, #222abb),
+    color-stop(64.47%, #65b2ea),
+    color-stop(83.22%, #6cc1ef),
+    to(#83f0ff)
+  );
+  background: -o-linear-gradient(
+    top,
+    #0e00ac 0%,
+    #222abb 10.82%,
+    #65b2ea 64.47%,
+    #6cc1ef 83.22%,
+    #83f0ff 100%
+  );
+  background: linear-gradient(
+    180deg,
+    #0e00ac 0%,
+    #222abb 10.82%,
+    #65b2ea 64.47%,
+    #6cc1ef 83.22%,
+    #83f0ff 100%
+  );
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#0e01ac));
   background: -o-linear-gradient(top, #000000 0%, #0e01ac 100%);
   background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
@@ -708,8 +730,6 @@ section[name='fifth-fw'] article {
   padding: 0;
 }
 
-
-
 section[name='fifth-fw'] article div {
   width: 50px;
   height: 50px;
@@ -732,6 +752,18 @@ section[name='fifth-fw'] article div {
     rgba(83, 43, 193, 0) 85%,
     rgba(227, 188, 63,0) 100%
   ); */
+  /* background-color: rgb(238,174,202); */
+  background: -o-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
   border-radius: 100%;
   text-align: center;
   padding: 16px;
@@ -746,42 +778,22 @@ section[name='fifth-fw'] article div {
 }
 
 section[name='fifth-fw'] article div:is(:hover, :focus) {
-  background-color: paleturquoise;
+  background-color: rgb(252, 176, 69);
   background: -o-radial-gradient(
     circle,
-    rgba(195, 88, 34, 1) 0%,
-    rgba(83, 43, 193, 1) 4%,
-    rgba(193, 191, 52, 1) 8%,
-    rgba(69, 65, 193, 1) 18%,
-    rgba(193, 178, 79, 1) 29%,
-    rgba(83, 43, 193, 1) 35%,
-    rgba(115, 191, 139, 1) 43%,
-    
-    rgba(83, 43, 193, 1) 50%,
-    rgba(195, 88, 34, 1) 62%,
-    rgba(186, 189, 91, 1) 72%,
-    rgba(130, 191, 129, 1) 75%,
-    rgba(205, 188, 78, 1) 80%,
-    rgba(83, 43, 193, 1) 85%,
-    rgba(227, 188, 63, 1) 100%
+    rgba(252, 176, 69, 1) 14%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 34, 34, 1) 90%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(131, 58, 180, 1) 100%
   );
   background: radial-gradient(
     circle,
-    rgba(195, 88, 34, 1) 0%,
-    rgba(83, 43, 193, 1) 4%,
-    rgba(193, 191, 52, 1) 8%,
-    rgba(69, 65, 193, 1) 18%,
-    rgba(193, 178, 79, 1) 29%,
-    rgba(83, 43, 193, 1) 35%,
-    rgba(115, 191, 139, 1) 43%,
-    
-    rgba(83, 43, 193, 1) 50%,
-    rgba(195, 88, 34, 1) 62%,
-    rgba(186, 189, 91, 1) 72%,
-    rgba(130, 191, 129, 1) 75%,
-    rgba(205, 188, 78, 1) 80%,
-    rgba(83, 43, 193, 1) 85%,
-    rgba(227, 188, 63, 1) 100%
+    rgba(252, 176, 69, 1) 14%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 34, 34, 1) 90%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(131, 58, 180, 1) 100%
   );
   -webkit-transform: scale(2.6);
       -ms-transform: scale(2.6);
