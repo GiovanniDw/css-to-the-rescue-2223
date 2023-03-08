@@ -78,12 +78,14 @@ h1 {
 
 main {
   /* height: fit-content; */
+  height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 main section {
-  position: relative;
+  position: sticky;
+  top: 0;
 
   /* padding: 1em; */
 
@@ -140,11 +142,30 @@ main section ul li {
 }
 
 section > div {
-  position: absolute;
+  
+  position: relative;
   width: 100%;
   height: 50%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
+
+
+section[name='first-fw'] > div {
+  top: 40vh;
+  left: calc(50% - 15em);
+  /* transform: translateY(50%); */
+    position: absolute;
+  width:15em;
+  height: 15em;
+  /* margin: 0 auto; */
+
+}
+
+input[type="checkbox"] {
+  -moz-appearance:initial;
+}
+
+
 section input {
   z-index: 999;
   display: block;
@@ -157,12 +178,30 @@ section input[value='firework'] {
   font-size: 2em;
   width: 2em;
   height: 2em;
+  
 }
 
+
+input[value='firework']:before {
+  display: block;
+
+  /* position: fixed; */
+  top:0;
+  left: calc(50%- 25px);
+  z-index: 5;
+  content: url(./images/Lighter_off.svg);
+  height: 100px;
+  width: 25px;
+}
+input[value='firework']:checked:before {
+
+  content: url(./images/Lighter.svg);
+
+}
 section input[value='firework']:checked {
   /* height: 1em; */
   /* width: 1em; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 section input[value='firework']:checked ~ div > div {
@@ -294,7 +333,8 @@ section[name='first-fw'] footer {
   position: absolute;
   border-radius: 50% 50% 0 0;
   bottom: 0;
-  height: 30em;
+  max-height: 30em;
+  height: 3em;
   width: 100%;
   z-index: 0;
   background: var(--color-green);
@@ -302,8 +342,8 @@ section[name='first-fw'] footer {
 
 @keyframes fireworks {
   0% {
-    opacity: 0;
-    transform: scale(0.2);
+    opacity: 1;
+    transform: scale(5);
     top: 90%;
     left: 50%;
   }
@@ -336,7 +376,7 @@ section[name='first-fw'] footer {
 @keyframes fireworks-ception {
   0% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(5.5);
     top: 90%;
     left: 50%;
   }
@@ -370,6 +410,7 @@ section[name='first-fw'] footer {
 }
 
 section[name='third-fw'] {
+  background: linear-gradient(180deg, #5B211D 0%, #3E1312 19.1%, #4D1B18 49.3%, #FBA810 49.31%, #D52E32 60.24%, #542118 100%);
   background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
   transition: background 1s ease-out;
   position: relative;
@@ -480,6 +521,8 @@ section[name='third-fw'] {
   }
 }
 section[name='fifth-fw'] {
+  background: conic-gradient(from 0deg at 50% 50%, #D52E32 -43.44deg, #D52E32 46.34deg, #FF6B00 179.37deg, #D52E32 316.56deg, #D52E32 406.34deg);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,8 +531,9 @@ section[name='fifth-fw'] {
 section[name='fifth-fw'] article {
   display: flex;
   flex-wrap: wrap;
-  width: 270px;
-  height: 270px;
+  /* grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); */
+  /* width: 270px; */
+  /* height: 270px; */
   padding: 0;
 }
 
@@ -533,6 +577,14 @@ section[name='fifth-fw'] article div {
   transition: all 1s ease-in 200ms;
 }
 
+section[name='fifth-fw'] article div:nth-child(3n-1) {
+  margin: .7em;
+}
+
+section[name='fifth-fw'] article div:nth-child(even) {
+  margin: 1em;
+}
+
 section[name='fifth-fw'] article div:is(:hover, :focus) {
   background-color: rgb(252, 176, 69);
   background: radial-gradient(
@@ -548,4 +600,49 @@ section[name='fifth-fw'] article div:is(:hover, :focus) {
 
   /* This transition is active on hover */
   transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
+}
+
+
+section[name='sixth-fw'] {
+position: relative;
+width:100%;
+height: 100%;
+overflow: hidden;
+background: radial-gradient(52.04% 41.1% at 50% 50%, #FBA810 0%, #D52E32 100%);
+
+}
+
+section[name='sixth-fw'] article[name='bubbles'] {
+position: relative;
+display: flex;
+} 
+
+article[name='bubbles'] span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: var(--color-blue);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0  0 10px var(--color-blue-dark), 0 0  0 50px var(--color-blue-light), 0 0  0 100px var(--color-green);
+  animation: bubbles 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  opacity: .5;
+}
+
+
+
+article[name='bubbles'] span:nth-child(even) {
+background: var(--color-red);
+box-shadow: 0 0  0 10px var(--color-red), 0 0  0 50px var(--color-yellow), 0 0  0 100px var(--color-purple);
+}
+
+
+@keyframes bubbles {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+transform: translateY(-10vh) scale(1);
+  }
 }

@@ -7,6 +7,10 @@ section[name='second-fw'] div {
   font-size: 4vw;
 }
 
+section[name='second-fw'] {
+  position: relative;
+background: linear-gradient(180deg, #32D418 0%, #664B11 37.33%, #712F0F 50%, #822F15 61.81%, #D52E32 100%);
+}
 section[name='second-fw'] div h1 {
   font-variation-settings: 'XROT' 20, 'YROT' 30;
   font-size: 3em;
