@@ -1,0 +1,66 @@
+
+section[name='sixth-fw'] {
+  -moz-appearance: initial;
+  position: relative;
+  width: 100cqw;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(
+    52.04% 41.1% at 50% 50%,
+    #fba810 0%,
+    #d52e32 100%
+  );
+}
+
+section[name='sixth-fw']:before {
+
+  /* position: absolute; */
+  display: inline;
+  position: absolute;
+  top: -2px;
+  content: url(../assets/images/top.svg);
+  /* background-size: 10px 20px; */
+  background-size: 100% 100%;
+  width: 100%;
+  overflow: hidden;
+  /* height: 200px; */
+  z-index: 99999;
+  /* transform: translateY(-1px) scale(1.5); */
+  /* transform-style: preserve-3d; */
+}
+
+section[name='sixth-fw'] article[name='bubbles'] {
+  top: 2em;
+  position: relative;
+  display: flex;
+  z-index: -1;
+}
+
+article[name='bubbles'] span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: var(--color-blue);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px var(--color-blue-dark),
+    0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
+  animation: bubbles 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  opacity: 0.5;
+}
+
+article[name='bubbles'] span:nth-child(even) {
+  background: var(--color-red);
+  box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
+    0 0 0 100px var(--color-purple);
+}
+
+@keyframes bubbles {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(.5);
+  }
+}

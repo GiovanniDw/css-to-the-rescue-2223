@@ -1,0 +1,111 @@
+section[name='fifth-fw'] {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #d52e32 -43.44deg,
+    #d52e32 46.34deg,
+    #ff6b00 179.37deg,
+    #d52e32 316.56deg,
+    #d52e32 406.34deg
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+section[name='fifth-fw'] article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); */
+  width: 470px;
+  /* height: 270px; */
+  padding: 0;
+  transition: all 2ms ease-in-out;
+}
+
+
+@media (orientation: landscape) {
+  section[name='fifth-fw'] article {
+    /* flex-direction: row; */
+    height:50vh;
+    width: 100vw;
+  }
+}
+
+@media (orientation: portrait) {
+  section[name='fifth-fw'] article {
+    /* flex-direction: column; */
+    height:100vh;
+    width: 50vw;
+  }
+}
+
+
+
+section[name='fifth-fw'] article div {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  /* background: radial-gradient(
+    circle,
+    rgba(195, 88, 34, 0) 0%,
+    rgba(83, 43, 193, 0) 4%,
+    rgba(193, 191, 52, 0) 8%,
+    rgba(69, 65, 193, 0) 18%,
+    rgba(193, 178, 79, 0) 29%,
+    rgba(83, 43, 193, 0) 35%,
+    rgba(115, 191, 139, 0) 43%,
+    
+    rgba(83, 43, 193, 0) 50%,
+    rgba(195, 88, 34, 0) 62%,
+    rgba(186, 189, 91, 0) 72%,
+    rgba(130, 191, 129, 0) 75%,
+    rgba(205, 188, 78, 0) 80%,
+    rgba(83, 43, 193, 0) 85%,
+    rgba(227, 188, 63,0) 100%
+  ); */
+  /* background-color: rgb(238,174,202); */
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  border-radius: 100%;
+  text-align: center;
+  padding: 16px;
+  font-size: 2em;
+  margin: 2px;
+  opacity: 1;
+
+  /* When not hovering, this transition is active */
+  transition: all 1s ease-in 200ms;
+}
+
+section[name='fifth-fw'] article div:nth-child(3n-1) {
+  margin: 0.7em;
+}
+
+section[name='fifth-fw'] article div:nth-child(even) {
+  margin: 1em;
+}
+
+section[name='fifth-fw'] article div:is(:hover, :focus) {
+  background-color: rgb(252, 176, 69);
+  background: radial-gradient(
+    circle,
+    rgba(252, 176, 69, 1) 14%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 34, 34, 1) 90%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(131, 58, 180, 1) 100%
+  );
+  transform: scale(2.6);
+  opacity: 0.6;
+
+  /* This transition is active on hover */
+  transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
+}

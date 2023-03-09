@@ -4,16 +4,17 @@ section[name='second-fw'] div {
   align-content: center;
   justify-content: center;
   text-align: center;
-  font-size: 4vw;
+  /* font-size: 4vw; */
 }
 
 section[name='second-fw'] {
   position: relative;
-background: linear-gradient(180deg, #32D418 0%, #664B11 37.33%, #712F0F 50%, #822F15 61.81%, #D52E32 100%);
+background: linear-gradient(180deg, var(--color-green) 0%, #664B11 37.33%, #712F0F 50%, #822F15 61.81%, #D52E32 100%);
 }
-section[name='second-fw'] div h1 {
+ h1 {
+  font-size: 10vw;
   font-variation-settings: 'XROT' 20, 'YROT' 30;
-  font-size: 3em;
+  /* font-size: 3em; */
   align-self: center;
   width: 100%;
   text-align: center;
@@ -30,13 +31,48 @@ section[name='second-fw'] div h1 {
   background-image: radial-gradient(circle, #fff800 0%, #fff800 100%);
   display: inline-block;
   text-align: center;
-  animation: FontVars 5s infinite linear both;
+  font-weight: 400;
+  animation: FontVars 10s infinite linear both;
+
+  transform: translateZ(-1px) scale(2) ;
 
   /* font-size: 190px; */
 }
 
+
+
+
+
+section[name='second-fw']:after {
+  /* background-color: rgba(130, 56, 50, 1); */
+  /* position: relative; */
+  /* clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 5em),0 100%);
+  --mask: conic-gradient(from -30deg at bottom,#0000,#000 1deg 59deg,#0000 60deg) 50%/2.31em 100%;
+  -webkit-mask: var(--mask);
+          mask: var(--mask); */
+  /* display: block; */
+  display:inline;
+  position: absolute;
+  bottom: -1em;
+  /* left: 0; */
+  content: url(../assets/images/bottom.svg);
+  /* background-image: url(./assets/images/bottom.svg); */
+  background-size: 100% 100%;
+  /* background-size: 10px 20px; */
+  width: 100%;
+  /* height: 10em; */
+  overflow: hidden;
+  /* height: 200px; */
+  z-index: 99999;
+  /* height: 5em; */
+}
+
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
-  section[name='second-fw'] div h1 {
+   h1 {
     animation: FontVars 5s infinite linear both;
   }
 }
@@ -49,7 +85,7 @@ section[name='second-fw'] {
 }
 
 @media (prefers-color-scheme: dark) {
-  section[name='second-fw'] div h1 {
+   h1 {
     /* background: none; */
     background-image: radial-gradient(
       circle,
