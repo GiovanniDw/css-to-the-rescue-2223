@@ -13,14 +13,14 @@
   --color-red: #ff4b2b;
   --color-blue: rgb(42, 95, 241);
   --color-blue-light: #6cc1ef;
-  --color-blue-500: #0083B0;
+  --color-blue-500: #0083b0;
   --color-blue-dark: #000046;
-  
+
   --color-green: #5ec08c;
-  --color-green-2: #00CDAC;
-  --color-yellow-light:#F3F9A7;
+  --color-green-2: #00cdac;
+  --color-yellow-light: #f3f9a7;
   --color-yellow: #ffff1c;
-  --color-orange:#f5af19;
+  --color-orange: #f5af19;
   --color-orange-dark: #fc4a1a;
   --color-purple: purple;
 }
@@ -39,10 +39,18 @@
   }
 }
 
-html,
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
+  perspective: 1px;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
 }
 
 body {
@@ -74,7 +82,7 @@ body {
     rgba(83, 43, 193, 1) 85%,
     rgba(227, 188, 63, 1) 100%
   ); */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -83,12 +91,13 @@ h1 {
 
 main {
   /* height: fit-content; */
-  height: 100vh;
+  /* height: 100vh; */
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-main section {
+ section {
   /* position: sticky; */
   top: 0;
 
@@ -99,7 +108,7 @@ main section {
 
 section {
   /* scroll-snap-align: center; */
-  min-height: 50cqb;
+  min-height: 80%;
   /* border: 1px solid red; */
   container-type: inline-size;
   /* border-bottom: 1px solid red; */
@@ -111,17 +120,17 @@ section:nth-child(1) {
   justify-content: space-around;
 }
 
-main section ul {
+section[name="fourth-fw"] ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-main section ul li {
+ul li {
   list-style: none;
 }
 
-main section ul li {
+section[name="fourth-fw"] ul li {
   background-color: red;
   width: 1em;
   height: 1em;
@@ -145,17 +154,16 @@ main section ul li {
     width: 100%;
   }
 }
-
+/* 
 section > div {
   position: relative;
   width: 100%;
   /* height: 50%; */
   /* margin: 0 auto; */
-}
-
+/* }  */
 
 section[name='third-fw'] {
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #5b211d 0%,
     #3e1312 19.1%,
@@ -163,11 +171,12 @@ section[name='third-fw'] {
     #fba810 49.31%,
     #d52e32 60.24%,
     #542118 100%
-  );
+  ); */
   background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
+  
   transition: background 1s ease-out;
   position: relative;
-  background-image: linear-gradient(black, rgb(8, 8, 70));
+  /* background-image: linear-gradient(black, rgb(8, 8, 70)); */
   height: 100vh;
   overflow: hidden;
 }
@@ -178,7 +187,7 @@ section[name='third-fw'] span:nth-child(3),
 section[name='third-fw'] span:nth-child(4) {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   background-image: radial-gradient(var(--color-yellow), black),
     radial-gradient(var(--color-red), black),
@@ -218,13 +227,13 @@ section[name='third-fw'] span:nth-child(4) {
 }
 
 section[name='third-fw'] span:nth-child(2) {
-  top: 50%;
+  top: 30%;
   left: 30%;
   /* transform: translate(10%, 30%); */
   animation-delay: 0.5s;
 }
 section[name='third-fw'] span:nth-child(3) {
-  top: 70%;
+  top: 80%;
   left: 70%;
   animation-delay: 0.75s;
 }
@@ -281,4 +290,3 @@ section[name='third-fw'] {
     opacity: 0;
   }
 }
-

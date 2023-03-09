@@ -4,16 +4,20 @@ section[name='second-fw'] div {
   align-content: center;
   justify-content: center;
   text-align: center;
+  /* padding: 3em; */
+  /* transform-style: preserve-3d; */
   /* font-size: 4vw; */
 }
 
 section[name='second-fw'] {
+  padding: 20em 0;
+  
   position: relative;
 background: linear-gradient(180deg, var(--color-green) 0%, #664B11 37.33%, #712F0F 50%, #822F15 61.81%, #D52E32 100%);
 }
  h1 {
-  font-size: 10vw;
-  font-variation-settings: 'XROT' 20, 'YROT' 30;
+  font-size: 5vw;
+  font-variation-settings: 'XROT' 30, 'YROT' 30;
   /* font-size: 3em; */
   align-self: center;
   width: 100%;
@@ -34,16 +38,18 @@ background: linear-gradient(180deg, var(--color-green) 0%, #664B11 37.33%, #712F
   font-weight: 400;
   animation: FontVars 10s infinite linear both;
 
-  transform: translateZ(-1px) scale(2) ;
+  transform: translateZ(-1px) scale(2.2) ;
 
   /* font-size: 190px; */
 }
 
+section[name='second-fw'] h1 {
+  background-image: radial-gradient(circle, brown 0%, var(--color-orange-dark) 100%);
+}
 
 
 
-
-section[name='second-fw']:after {
+section[name='second-fw']::after {
   /* background-color: rgba(130, 56, 50, 1); */
   /* position: relative; */
   /* clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 5em),0 100%);
@@ -51,19 +57,25 @@ section[name='second-fw']:after {
   -webkit-mask: var(--mask);
           mask: var(--mask); */
   /* display: block; */
-  display:inline;
+  /* display:inline; */
+  content: '';
   position: absolute;
-  bottom: -1em;
+  bottom: -3em;
   /* left: 0; */
-  content: url(../assets/images/bottom.svg);
-  /* background-image: url(./assets/images/bottom.svg); */
-  background-size: 100% 100%;
+  /* content: url(../assets/images/bottom.svg);
+   */
+  background: url(../assets/images/bottom.svg) bottom center ;
+  background-repeat: no-repeat;
+   /* background-image: url(./assets/images/bottom.svg); */
+  background-size:auto;
   /* background-size: 10px 20px; */
   width: 100%;
+  height: 100%;
   /* height: 10em; */
   overflow: hidden;
   /* height: 200px; */
-  z-index: 99999;
+  /* transform: translateZ(-1px) scale(1); */
+  /* z-index: 99999; */
   /* height: 5em; */
 }
 

@@ -11,35 +11,111 @@ section[name='fifth-fw'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  
+  /* min-height: 100vh; */
   
 }
 
 section[name='fifth-fw'] article {
+  transform: rotate(0deg);
+  transform-origin: center;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  /* grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); */
-  width: 470px;
-  /* height: 270px; */
+  flex-wrap:wrap;
+  align-items: space;
+  justify-content: space-around;
+  /* grid-template-columns: minmax(0, 1fr 1fr) minmax(0,1fr) minmax(0,1fr); */
+  width: 17em;
+  height: 17em;
   padding: 0;
-  transition: all 2ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+@media (max-width: 450px) {
+  section[name='fifth-fw'] article {
+    transform: rotate(360deg);
+    /* gap: 1em; */
+    /* width: 15em; */
+    /* height: 10em; */
+    transition: all 500ms ease-in-out;
+  }
+  section[name='fifth-fw'] article div:nth-child(even) {
+    padding: .2em;
+    margin: .5em;
+  }
+  section[name='fifth-fw'] article div {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+
+@media (min-width: 450px) {
+  section[name='fifth-fw'] article {
+    transform: rotate(360deg);
+    /* gap: 1em; */
+    width: 60%;
+    height: 50%;
+    transition: all 500ms ease-in-out;
+  }
+  section[name='fifth-fw'] article div:nth-child(even) {
+    /* margin: .2em; */
+    padding: .2em;
+    margin: .5em;
+  }
+  section[name='fifth-fw'] article div {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+@media (min-width: 1050px) {
+  section[name='fifth-fw'] article {
+    height: 20em;
+    width: 35em;
+    padding: 1.2em;
+    
+    transform: rotate(-280deg);
+    /* gap: 1em; */
+    transition: all 500ms ease-in-out;
+  }
+  section[name='fifth-fw'] article div:nth-child(even) {
+    /* transform: translateZ(3px) scale(2);
+    transform-style: preserve-3d; */
+    /* margin: .2em; */
+    margin: 1.3em;
+    padding: 1.2em;
+  }
+}
+@media (min-width: 1400px) {
+  section[name='fifth-fw'] article {
+    height: 40em;
+    width: 70%;
+    transform: rotate(-660deg);
+    /* gap: 1em; */
+    transition: all 500ms ease-in-out;
+  }
+  section[name='fifth-fw'] article div:nth-child(even) {
+    /* transform: translateZ(3px) scale(2);
+    transform-style: preserve-3d; */
+    margin: 2em;
+    padding: 1.5em;
+  }
 }
 
 
 @media (orientation: landscape) {
   section[name='fifth-fw'] article {
     /* flex-direction: row; */
-    height:50vh;
-    width: 100vw;
+    /* height:50vh; */
+    /* width: 100vw; */
   }
 }
 
 @media (orientation: portrait) {
   section[name='fifth-fw'] article {
     /* flex-direction: column; */
-    height:100vh;
-    width: 50vw;
+    /* height:100vh; */
+    /* width: 50vw; */
   }
 }
 
@@ -76,9 +152,9 @@ section[name='fifth-fw'] article div {
 
   border-radius: 100%;
   text-align: center;
-  padding: 16px;
+  padding: 1em;
   font-size: 2em;
-  margin: 2px;
+  margin: .1em;
   opacity: 1;
 
   /* When not hovering, this transition is active */
@@ -86,11 +162,11 @@ section[name='fifth-fw'] article div {
 }
 
 section[name='fifth-fw'] article div:nth-child(3n-1) {
-  margin: 0.7em;
+  /* margin: 0.7em; */
 }
 
 section[name='fifth-fw'] article div:nth-child(even) {
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 section[name='fifth-fw'] article div:is(:hover, :focus) {
