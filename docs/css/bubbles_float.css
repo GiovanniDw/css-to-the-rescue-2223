@@ -13,7 +13,7 @@ section:nth-child(4) {
   /* border: 5em solid blue; */
   -moz-appearance: initial;
   -webkit-appearance: initial;
-          appearance: initial;
+  appearance: initial;
   position: relative;
   width: 100cqw;
   height: 100%;
@@ -32,7 +32,6 @@ section:nth-child(4) {
 }
 
 section:nth-child(4)::before {
-
   /* position: absolute; */
   /* display: inline; */
   position: absolute;
@@ -40,7 +39,7 @@ section:nth-child(4)::before {
   content: '';
   background: url(../assets/images/top.svg) top center;
   /* background-size: 10px 20px; */
-  background-size:auto;
+  background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -54,14 +53,12 @@ section:nth-child(4)::before {
 }
 
 @media (width < 500px) {
-  section:nth-child(4)::before{
+  section:nth-child(4)::before {
     /* opacity: 0; */
     /* background-image: none; */
-      top: 0;
+    top: 0;
   }
 }
-
-
 
 section:nth-child(4) article {
   top: 2em;
@@ -81,41 +78,41 @@ section:nth-child(4) article span {
   border-radius: 100%;
   -webkit-box-shadow: 0 0 0 10px var(--color-blue-dark),
     0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
-          box-shadow: 0 0 0 10px var(--color-blue-dark),
+  box-shadow: 0 0 0 10px var(--color-blue-dark),
     0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
   -webkit-animation: bubbles 15s linear infinite;
-          animation: bubbles 15s linear infinite;
+  animation: bubbles 15s linear infinite;
   -webkit-animation-duration: calc(125s / var(--i));
-          animation-duration: calc(125s / var(--i));
+  animation-duration: calc(125s / var(--i));
   opacity: 0.5;
 }
 
 section:nth-child(4) span:nth-child(even) {
   background: var(--color-red);
-  -webkit-box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
-    0 0 0 100px var(--color-purple);
-          box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
+  -webkit-box-shadow: 0 0 0 10px var(--color-red),
+    0 0 0 50px var(--color-yellow), 0 0 0 100px var(--color-purple);
+  box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
     0 0 0 100px var(--color-purple);
 }
 
 @-webkit-keyframes bubbles {
   0% {
     -webkit-transform: translateY(100vh) scale(0);
-            transform: translateY(100vh) scale(0);
+    transform: translateY(100vh) scale(0);
   }
   100% {
-    -webkit-transform: translateY(-10vh) scale(.5);
-            transform: translateY(-10vh) scale(.5);
+    -webkit-transform: translateY(-10vh) scale(0.5);
+    transform: translateY(-10vh) scale(0.5);
   }
 }
 
 @keyframes bubbles {
   0% {
     -webkit-transform: translateY(100vh) scale(0);
-            transform: translateY(100vh) scale(0);
+    transform: translateY(100vh) scale(0);
   }
   100% {
-    -webkit-transform: translateY(-10vh) scale(.5);
-            transform: translateY(-10vh) scale(.5);
+    -webkit-transform: translateY(-10vh) scale(0.5);
+    transform: translateY(-10vh) scale(0.5);
   }
 }

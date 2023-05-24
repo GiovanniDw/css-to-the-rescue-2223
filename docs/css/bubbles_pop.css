@@ -6,12 +6,14 @@
 */
 
 section:nth-child(5) {
-  background: conic-gradient(from 0deg at 50% 50%,
-      #d52e32 -43.44deg,
-      #d52e32 46.34deg,
-      #ff6b00 179.37deg,
-      #d52e32 316.56deg,
-      #d52e32 406.34deg);
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #d52e32 -43.44deg,
+    #d52e32 46.34deg,
+    #ff6b00 179.37deg,
+    #d52e32 316.56deg,
+    #d52e32 406.34deg
+  );
 
   display: -webkit-box;
 
@@ -19,33 +21,32 @@ section:nth-child(5) {
 
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   /* min-height: 100vh; */
-
 }
 
 section:nth-child(5) article {
   -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: space;
-      -ms-flex-align: space;
-          align-items: space;
+  -ms-flex-align: space;
+  align-items: space;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   /* grid-template-columns: minmax(0, 1fr 1fr) minmax(0,1fr) minmax(0,1fr); */
   width: 17em;
   height: 17em;
@@ -58,8 +59,8 @@ section:nth-child(5) article {
 @media (max-width: 450px) {
   section:nth-child(5) article {
     -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
     /* gap: 1em; */
     /* width: 15em; */
     /* height: 10em; */
@@ -69,8 +70,8 @@ section:nth-child(5) article {
   }
 
   section:nth-child(5) article div:nth-child(even) {
-    padding: .2em;
-    margin: .5em;
+    padding: 0.2em;
+    margin: 0.5em;
   }
 
   section:nth-child(5) article div {
@@ -79,12 +80,11 @@ section:nth-child(5) article {
   }
 }
 
-
 @media (min-width: 450px) {
   section:nth-child(5) article {
     -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
     /* gap: 1em; */
     width: 60%;
     height: 50%;
@@ -95,8 +95,8 @@ section:nth-child(5) article {
 
   section:nth-child(5) article div:nth-child(even) {
     /* margin: .2em; */
-    padding: .2em;
-    margin: .5em;
+    padding: 0.2em;
+    margin: 0.5em;
   }
 
   section:nth-child(5) article div {
@@ -113,9 +113,9 @@ section:nth-child(5) article {
 
     -webkit-transform: rotate(-280deg);
 
-        -ms-transform: rotate(-280deg);
+    -ms-transform: rotate(-280deg);
 
-            transform: rotate(-280deg);
+    transform: rotate(-280deg);
     /* gap: 1em; */
     -webkit-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
@@ -136,8 +136,8 @@ section:nth-child(5) article {
     height: 40em;
     width: 70%;
     -webkit-transform: rotate(-660deg);
-        -ms-transform: rotate(-660deg);
-            transform: rotate(-660deg);
+    -ms-transform: rotate(-660deg);
+    transform: rotate(-660deg);
     /* gap: 1em; */
     -webkit-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
@@ -151,7 +151,6 @@ section:nth-child(5) article {
     padding: 1.5em;
   }
 }
-
 
 @media (orientation: landscape) {
   section:nth-child(5) article {
@@ -169,26 +168,28 @@ section:nth-child(5) article {
   }
 }
 
-
-
 section:nth-child(5) article div {
   width: 50px;
   height: 50px;
   background-color: aquamarine;
 
-  background: -o-radial-gradient(circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%);
+  background: -o-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 
-  background: radial-gradient(circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 
   border-radius: 100%;
   text-align: center;
   padding: 1em;
   font-size: 2em;
-  margin: .1em;
+  margin: 0.1em;
   opacity: 1;
 
   /* When not hovering, this transition is active */
@@ -207,27 +208,33 @@ section:nth-child(5) article div:nth-child(even) {
 
 section:nth-child(5) article div:is(:hover, :focus) {
   background-color: rgb(252, 176, 69);
-  background: -o-radial-gradient(circle,
-      rgba(252, 176, 69, 1) 14%,
-      rgba(253, 29, 29, 1) 50%,
-      rgba(253, 34, 34, 1) 90%,
-      rgba(255, 255, 255, 1) 95%,
-      rgba(131, 58, 180, 1) 100%);
-  background: radial-gradient(circle,
-      rgba(252, 176, 69, 1) 14%,
-      rgba(253, 29, 29, 1) 50%,
-      rgba(253, 34, 34, 1) 90%,
-      rgba(255, 255, 255, 1) 95%,
-      rgba(131, 58, 180, 1) 100%);
+  background: -o-radial-gradient(
+    circle,
+    rgba(252, 176, 69, 1) 14%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 34, 34, 1) 90%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(131, 58, 180, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(252, 176, 69, 1) 14%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 34, 34, 1) 90%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(131, 58, 180, 1) 100%
+  );
   -webkit-transform: scale(2.6);
-      -ms-transform: scale(2.6);
-          transform: scale(2.6);
+  -ms-transform: scale(2.6);
+  transform: scale(2.6);
   opacity: 0.6;
 
   /* This transition is active on hover */
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
+  -webkit-transition: -webkit-transform 250ms
+    cubic-bezier(0.5, 1.75, 0.75, 1.25);
   transition: -webkit-transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
   -o-transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
   transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
-  transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25), -webkit-transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
+  transition: transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25),
+    -webkit-transform 250ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
 }
