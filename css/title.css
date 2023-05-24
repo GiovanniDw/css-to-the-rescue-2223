@@ -89,12 +89,6 @@ section:nth-child(3)::after {
   }
 }
 
-@media (width > 400px) {
-  
-}
-
-
-
 /* if reduce motion is on the animation wil be slower */
 @media (prefers-reduced-motion: reduce) {
   h1 {
