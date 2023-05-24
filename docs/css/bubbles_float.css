@@ -1,0 +1,121 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* section:nth-child(4) */
+
+/* section:nth-child(4) */
+
+section:nth-child(4) {
+  /* border: 5em solid blue; */
+  -moz-appearance: initial;
+  -webkit-appearance: initial;
+          appearance: initial;
+  position: relative;
+  width: 100cqw;
+  height: 100%;
+  overflow: hidden;
+  background: -o-radial-gradient(
+    50% 50%,
+    52.04% 41.1%,
+    #fba810 0%,
+    #d52e32 100%
+  );
+  background: radial-gradient(
+    52.04% 41.1% at 50% 50%,
+    #fba810 0%,
+    #d52e32 100%
+  );
+}
+
+section:nth-child(4)::before {
+
+  /* position: absolute; */
+  /* display: inline; */
+  position: absolute;
+  top: -3em;
+  content: '';
+  background: url(../assets/images/top.svg) top center;
+  /* background-size: 10px 20px; */
+  background-size:auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  /* height: 200px; */
+  z-index: 99999;
+  /* transform: translateZ(-1px) scale(1); */
+  /* transform: translateY(-1px) scale(1.5); */
+  /* transform-style: preserve-3d; */
+}
+
+@media (width < 500px) {
+  section:nth-child(4)::before{
+    /* opacity: 0; */
+    /* background-image: none; */
+      top: 0;
+  }
+}
+
+
+
+section:nth-child(4) article {
+  top: 2em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+}
+
+section:nth-child(4) article span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: var(--color-blue);
+  margin: 0 4px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 0 10px var(--color-blue-dark),
+    0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
+          box-shadow: 0 0 0 10px var(--color-blue-dark),
+    0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
+  -webkit-animation: bubbles 15s linear infinite;
+          animation: bubbles 15s linear infinite;
+  -webkit-animation-duration: calc(125s / var(--i));
+          animation-duration: calc(125s / var(--i));
+  opacity: 0.5;
+}
+
+section:nth-child(4) span:nth-child(even) {
+  background: var(--color-red);
+  -webkit-box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
+    0 0 0 100px var(--color-purple);
+          box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
+    0 0 0 100px var(--color-purple);
+}
+
+@-webkit-keyframes bubbles {
+  0% {
+    -webkit-transform: translateY(100vh) scale(0);
+            transform: translateY(100vh) scale(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10vh) scale(.5);
+            transform: translateY(-10vh) scale(.5);
+  }
+}
+
+@keyframes bubbles {
+  0% {
+    -webkit-transform: translateY(100vh) scale(0);
+            transform: translateY(100vh) scale(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10vh) scale(.5);
+            transform: translateY(-10vh) scale(.5);
+  }
+}
