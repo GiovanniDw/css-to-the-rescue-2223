@@ -1,12 +1,12 @@
 # 􀢅 CSS To The Rescue
 
-### Assignment
-+ **Leerdoelen**
+# Assignment
+ ### Leerdoelen  
    - Je kunt experimenteren met (voor jou) **nieuwe css-technieken** - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
    - Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
    - Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
    - Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
-+ Rubic
+### Rubic
    - [x] Je hebt **geëxperimenteerd** met voor jou nieuwe CSS-technieken.
    - [ ] Je resultaat is een experimentele én aangename ervaring waarbij **inhoud, vorm en interactie** één geheel vormen.
    - [ ] Je laat zien dat je de **mogelijkheden en kracht van CSS begrijpt.** In je code gebruik je CSS, HTML waar ze in uitblinken en combineer je de technieken zodat ze elkaar versterken.
@@ -22,8 +22,7 @@
 
 ### Mijn plan
 
-De CSS technieken waar ik mee ben begonnen;
-
+De CSS technieken waar ik mee ga beginnen
 - `animation`
 - `@keyframes`
 - `transforms`
@@ -31,7 +30,11 @@ De CSS technieken waar ik mee ben begonnen;
 - `font-variable`
 - `@media preferes-color-scheme`
 
+#### Assets
 ![Image.png](README.assets/Image.png)
+
+
+#### Font Variable Animation
 
 ![Image.png](README.assets/Image%20(2).png)
 
@@ -95,6 +98,7 @@ h1 {
 	}
 }
 ```
+#### Fireworkception
 
 ![Screenshot 2023-04-20 at 18.39.21.png](README.assets/Screenshot%202023-04-20%20at%2018.39.21.png)
 
@@ -126,9 +130,9 @@ Iets meer beweging, en css
 
 ### Afronding
 
-![Screenshot 2023-04-20 at 17.34.40.png](README.assets/Screenshot%202023-04-20%20at%2017.34.40.png)
+> ![Screenshot 2023-04-20 at 17.34.40.png](README.assets/Screenshot%202023-04-20%20at%2017.34.40.png)
 
-![Screenshot 2023-04-20 at 17.35.18.png](README.assets/Screenshot%202023-04-20%20at%2017.35.18.png)
+> ![Screenshot 2023-04-20 at 17.35.18.png](README.assets/Screenshot%202023-04-20%20at%2017.35.18.png)
 
 #### Interacties
 
@@ -160,72 +164,10 @@ Context
 
 ---
 
-# Bronnen
-
-[CSS-Only Responsive Layout with Smooth Transitions | Codrops](https://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/)
-
-[Using CSS animations - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-
-[text-color-animation](https://codepen.io/alvarotrigo/pen/PoKMyNO)
-
-[Eindopdracht - CSS to the Rescue 22/23](https://cmda-minor-web.github.io/css-to-the-rescue-2223/index.html#vuurwerkshow)
-
-[Font scaling based on size of container](https://stackoverflow.com/questions/16056591/font-scaling-based-on-size-of-container)
-
----
-
-### Font Scaling
-
-1814
-
-\+350
-
-If the container is not the body, CSS Tricks covers all of your options in [*Fitting Text to a Container*](https://css-tricks.com/fitting-text-to-a-container/).
-
-If the container is the body, what you are looking for is [Viewport-percentage lengths](http://dev.w3.org/csswg/css-values/#viewport-relative-lengths):
-
-> The **viewport-percentage lengths** are relative to the size of the [initial containing block](https://www.w3.org/TR/CSS21/visudet.html#containing-block-details). When the height or width of the initial containing block is changed, they are scaled accordingly. However, when the value of overflow on the root element is auto, any scroll bars are assumed not to exist.
-The values are:
-
-- `vw` (% of the viewport width)
-- `vh` (% of the viewport height)
-- `vi` (1% of the viewport size in the direction of the root element's inline axis)
-- `vb` (1% of the viewport size in the direction of the root element's block axis)
-- `vmin` (the smaller of `vw` or `vh`)
-- `vmax` (the larger or `vw` or `vh`)
-
-1 v* is equal to 1% of the initial containing block.
-
-Using it looks like this:
-
-```css
-p {
-    font-size: 4vw;
-}
-```
-
-As you can see, when the viewport width increases, so do the `font-size`, without needing to use media queries.
-
-These values are a sizing unit, just like `px` or `em`, so they can be used to size other elements as well, such as width, margin, or padding.
-
-Browser support is pretty good, but you'll likely need a fallback, such as:
-
-```css
-p {
-    font-size: 16px;
-    font-size: 4vw;
-}
-```
-
-Check out the support statistics: [http://caniuse.com/#feat=viewport-units](http://caniuse.com/#feat=viewport-units).
-
-Also, check out CSS-Tricks for a broader look: [*Viewport Sized Typography*](http://css-tricks.com/viewport-sized-typography/)
-
-Here's a nice article about setting minimum/maximum sizes and exercising a bit more control over the sizes: [*Precise control over responsive typography*](http://madebymike.com.au/writing/precise-control-responsive-typography/)
-
-And here's an article about setting your size using calc() so that the text fills the viewport: [http://codepen.io/CrocoDillon/pen/fBJxu](http://codepen.io/CrocoDillon/pen/fBJxu)
-
-Also, please view this article, which uses a technique dubbed 'molten leading' to adjust the line-height as well. [*Molten Leading in CSS*](https://css-tricks.com/molten-leading-css/)
-
-[Taming Advanced CSS Selectors](https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/)
+# Bronnen  
+- [CSS-Only Responsive Layout with Smooth Transitions | Codrops](https://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/)  
+- [Using CSS animations - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)  
+- [text-color-animation](https://codepen.io/alvarotrigo/pen/PoKMyNO)  
+- [Eindopdracht - CSS to the Rescue 22/23](https://cmda-minor-web.github.io/css-to-the-rescue-2223/index.html#vuurwerkshow)  
+- [Font scaling based on size of container](https://stackoverflow.com/questions/16056591/font-scaling-based-on-size-of-container)
 
