@@ -1,6 +1,21 @@
-# 􀢅 CSS To The Rescue
-
-# Assignment
+### CSS To The Rescue
+> 
+####  Contents  
+- [Assignment](#assignment)
+  - [Leerdoelen](#leerdoelen)
+  - [Rubic](#rubic)
+- [Process](#process)
+  - [Mijn plan](#mijn-plan)
+    - [Assets](#assets)
+    - [Font Variable Animation](#font-variable-animation)
+    - [Fireworkception](#fireworkception)
+  - [Voortgang](#voortgang)
+    - [`@media (prefers-color-scheme)`](#media-prefers-color-scheme)
+    - [`@media (width < width)`](#media-width--width)
+  - [Afronding](#afronding)
+- [Bronnen](#bronnen)
+  
+## Assignment
  ### Leerdoelen  
    - Je kunt experimenteren met (voor jou) **nieuwe css-technieken** - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
    - Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
@@ -10,15 +25,15 @@
    - [x] Je hebt **geëxperimenteerd** met voor jou nieuwe CSS-technieken.
    - [ ] Je resultaat is een experimentele én aangename ervaring waarbij **inhoud, vorm en interactie** één geheel vormen.
    - [ ] Je laat zien dat je de **mogelijkheden en kracht van CSS begrijpt.** In je code gebruik je CSS, HTML waar ze in uitblinken en combineer je de technieken zodat ze elkaar versterken.
-   - [ ] Je code bestaat uit **vanilla CSS** en HTML. Geen JS, pre-processors, libraries en frameworks en alleen ID’s en classes indien strikt noodzakelijk.
+   - [x] Je code bestaat uit **vanilla CSS** en HTML. Geen JS, pre-processors, libraries en frameworks en alleen ID’s en classes indien strikt noodzakelijk.
    - [ ] **Proces:**
-      - [ ] Je website staat tijdig online (op GitHub en DLO) en is zonder technische problemen te zien. Verwijzingen naar bestanden (css, js, afbeeldingen, fonts, etc.) werken. Je website werkt in minimaal één browser naar keuze.
-      - [ ] Je code is verzorgd en leesbaar. Netjes ingesprongen, van commentaar voorzien, etc.
-      - [ ] Je vermeldt gebruikte bronnen in je code en procesverslag.
-      - [ ] Je hebt je vorderingen besproken en je proces vastgelegd en tijdig ontsloten op GitHub.
+      - [x] Je website staat tijdig online (op GitHub en DLO) en is zonder technische problemen te zien. Verwijzingen naar bestanden (css, js, afbeeldingen, fonts, etc.) werken. Je website werkt in minimaal één browser naar keuze.
+      - [x] Je code is verzorgd en leesbaar. Netjes ingesprongen, van commentaar voorzien, etc.
+      - [x] Je vermeldt gebruikte bronnen in je code en procesverslag.
+      - [x] Je hebt je vorderingen besproken en je proces vastgelegd en tijdig ontsloten op GitHub.
    - [ ] Je kunt je **code uitleggen** in het eindgesprek.
 
-# Process
+## Process
 
 ### Mijn plan
 
@@ -130,41 +145,11 @@ Iets meer beweging, en css
 
 ### Afronding
 
-> ![Screenshot 2023-04-20 at 17.34.40.png](README.assets/Screenshot%202023-04-20%20at%2017.34.40.png)
+![Screenshot 2023-04-20 at 17.34.40.png](README.assets/Screenshot%202023-04-20%20at%2017.34.40.png)
+ ![Screenshot 2023-04-20 at 17.35.18.png](README.assets/Screenshot%202023-04-20%20at%2017.35.18.png)
 
-> ![Screenshot 2023-04-20 at 17.35.18.png](README.assets/Screenshot%202023-04-20%20at%2017.35.18.png)
 
-#### Interacties
-
-Media Queries
-
-**Css Technieken**
-
-Context
-
-`@media prefers-color-scheme`
-
-**Kleur**
-
-**Animation & Transform**
-
-`@keyframes`
-
-`font-variation-settings`
-
-`@container (width < …)`
-
-`transform: translateY();`
-
-**Layout**
-
-**Selectors**
-
-**Effects**
-
----
-
-# Bronnen  
+## Bronnen  
 - [CSS-Only Responsive Layout with Smooth Transitions | Codrops](https://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/)  
 - [Using CSS animations - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)  
 - [text-color-animation](https://codepen.io/alvarotrigo/pen/PoKMyNO)  
