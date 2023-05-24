@@ -132,7 +132,7 @@ section input[value='firework']:checked {
 section input[value='firework']:checked ~ div div {
   animation: fireworks 3s ease-out infinite;
 }
-section[name='fireworks-ception'] div div {
+section:nth-child(2) div div {
   position: absolute;
   width: 1em;
   height: 1em;

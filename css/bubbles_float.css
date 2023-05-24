@@ -39,6 +39,16 @@ section:nth-child(4)::before {
   /* transform-style: preserve-3d; */
 }
 
+@media (width < 500px) {
+  section:nth-child(4)::before{
+    /* opacity: 0; */
+    /* background-image: none; */
+      top: 0;
+  }
+}
+
+
+
 section:nth-child(4) article {
   top: 2em;
   position: relative;

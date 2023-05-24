@@ -4,13 +4,13 @@ section input[value='firework']:checked {
   /* border: 1px solid red; */
 }
 
-section[name='fireworks-ception'] {
+section:nth-child(2) {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
 }
 
-section[name='fireworks-ception'] > div {
+section:nth-child(2) > div {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -28,12 +28,12 @@ input[type='checkbox'] {
   appearance: initial;
 }
 
-section[name='fireworks-ception'] input {
+section:nth-child(2) input {
   z-index: 999;
   display: block;
 }
 
-section[name='fireworks-ception'] input[value='firework'] {
+section:nth-child(2) input[value='firework'] {
   position: absolute;
   bottom: 1em;
   left: 50%;
@@ -61,21 +61,21 @@ input[value='firework']:checked:before {
   content: url(../assets/images/Lighter.svg);
 }
 
-section[name='fireworks-ception'] input[value='firework']:checked ~ div > div {
+section:nth-child(2) input[value='firework']:checked ~ div > div {
   animation: fireworks 3s ease-out infinite;
 }
 
-section[name='fireworks-ception'] input[value='firework']:checked ~ div div > div {
+section:nth-child(2) input[value='firework']:checked ~ div div > div {
   animation: fireworks-ception 3s ease-out infinite;
 }
 
-section[name='fireworks-ception'] input[value='firework']:checked ~ section {
+section:nth-child(2) input[value='firework']:checked ~ section {
   height: 2em;
   width: 2em;
   background: #000;
 }
 
-section[name='fireworks-ception']:has(input[value='firework']) {
+section:nth-child(2):has(input[value='firework']) {
   position: relative;
   width: auto;
   background: linear-gradient(180deg,
@@ -87,7 +87,7 @@ section[name='fireworks-ception']:has(input[value='firework']) {
   transition: background 1s ease-out;
 }
 
-section[name='fireworks-ception']:has(input[value='firework']:checked) {
+section:nth-child(2):has(input[value='firework']:checked) {
   background: linear-gradient(180deg,
       #0e00ac 0%,
       #222abb 10.82%,
@@ -98,7 +98,7 @@ section[name='fireworks-ception']:has(input[value='firework']:checked) {
   transition: background 1s ease-out;
 }
 
-section[name='fireworks-ception'] div div {
+section:nth-child(2) div div {
   z-index: 1;
   position: absolute;
   width: 1em;
@@ -110,7 +110,7 @@ section[name='fireworks-ception'] div div {
   left: 50%;
 }
 
-section[name='fireworks-ception'] div div div {
+section:nth-child(2) div div div {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -125,75 +125,75 @@ section[name='fireworks-ception'] div div div {
   /* top: 50%; */
 }
 
-section[name='fireworks-ception'] div div:not(:nth-child(6)),
-section[name='fireworks-ception'] div div div {
+section:nth-child(2) div div:not(:nth-child(6)),
+section:nth-child(2) div div div {
   opacity: 0;
 }
 
-section[name='fireworks-ception'] div div:nth-child(1),
-section[name='fireworks-ception'] div div div:nth-child(1) {
+section:nth-child(2) div div:nth-child(1),
+section:nth-child(2) div div div:nth-child(1) {
   top: 50%;
   left: 50%;
   background: var(--color-green);
 }
 
-section[name='fireworks-ception'] div div:nth-child(2),
-section[name='fireworks-ception'] div div div:nth-child(2) {
+section:nth-child(2) div div:nth-child(2),
+section:nth-child(2) div div div:nth-child(2) {
   top: 10%;
   left: 50%;
   background: var(--color-green);
 }
 
-section[name='fireworks-ception'] div div:nth-child(3),
-section[name='fireworks-ception'] div div div:nth-child(3) {
+section:nth-child(2) div div:nth-child(3),
+section:nth-child(2) div div div:nth-child(3) {
   top: 25%;
   left: 75%;
   background: var(--color-purple);
 }
 
-section[name='fireworks-ception'] div div:nth-child(4),
-section[name='fireworks-ception'] div div div:nth-child(4) {
+section:nth-child(2) div div:nth-child(4),
+section:nth-child(2) div div div:nth-child(4) {
   top: 50%;
   left: 90%;
   background: var(--color-green);
 }
 
-section[name='fireworks-ception'] div div:nth-child(5),
-section[name='fireworks-ception'] div div div:nth-child(5) {
+section:nth-child(2) div div:nth-child(5),
+section:nth-child(2) div div div:nth-child(5) {
   top: 75%;
   left: 75%;
   background-color: #1cb5e0;
 }
 
-section[name='fireworks-ception'] div div:nth-child(6),
-section[name='fireworks-ception'] div div div:nth-child(6) {
+section:nth-child(2) div div:nth-child(6),
+section:nth-child(2) div div div:nth-child(6) {
   top: 90%;
   left: 50%;
   background: black;
 }
 
-section[name='fireworks-ception'] div div:nth-child(7),
-section[name='fireworks-ception'] div div div:nth-child(7) {
+section:nth-child(2) div div:nth-child(7),
+section:nth-child(2) div div div:nth-child(7) {
   top: 75%;
   left: 25%;
   background: var(--color-orange);
 }
 
-section[name='fireworks-ception'] div div:nth-child(8),
-section[name='fireworks-ception'] div div div:nth-child(8) {
+section:nth-child(2) div div:nth-child(8),
+section:nth-child(2) div div div:nth-child(8) {
   top: 50%;
   left: 10%;
   background: var(--color-yellow);
 }
 
-section[name='fireworks-ception'] div div:nth-child(9),
-section[name='fireworks-ception'] div div div:nth-child(9) {
+section:nth-child(2) div div:nth-child(9),
+section:nth-child(2) div div div:nth-child(9) {
   top: 25%;
   left: 25%;
   background: var(--color-blue);
 }
 
-section[name='fireworks-ception'] footer {
+section:nth-child(2) footer {
   position: absolute;
   border-radius: 50% 50% 0 0;
   bottom: 0;

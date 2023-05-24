@@ -1,4 +1,4 @@
-section[name='dancing-title'] div {
+section:nth-child(3) div {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -9,7 +9,7 @@ section[name='dancing-title'] div {
   /* font-size: 4vw; */
 }
 
-section[name='dancing-title'] {
+section:nth-child(3) {
   padding: 20em 0;
 
   position: relative;
@@ -44,13 +44,13 @@ h1 {
   /* font-size: 190px; */
 }
 
-section[name='dancing-title'] h1 {
+section:nth-child(3) h1 {
   background-image: radial-gradient(circle, brown 0%, var(--color-orange-dark) 100%);
 }
 
 
 
-section[name='dancing-title']::after {
+section:nth-child(3)::after {
   /* background-color: rgba(130, 56, 50, 1); */
   /* position: relative; */
   /* clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 5em),0 100%);
@@ -81,6 +81,18 @@ section[name='dancing-title']::after {
 }
 
 
+@media (width < 500px) {
+  section:nth-child(3)::after{
+    /* opacity: 0; */
+    /* background-image: none; */
+      bottom:0;
+  }
+}
+
+@media (width > 400px) {
+  
+}
+
 
 
 /* if reduce motion is on the animation wil be slower */
@@ -90,7 +102,7 @@ section[name='dancing-title']::after {
   }
 }
 
-section[name='dancing-title'] {
+section:nth-child(3) {
   display: flex;
   /* align-content: center; */
   justify-content: center;

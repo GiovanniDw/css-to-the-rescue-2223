@@ -1,4 +1,4 @@
-section[name='bubbles-pop'] {
+section:nth-child(5) {
   background: conic-gradient(from 0deg at 50% 50%,
       #d52e32 -43.44deg,
       #d52e32 46.34deg,
@@ -14,7 +14,7 @@ section[name='bubbles-pop'] {
 
 }
 
-section[name='bubbles-pop'] article {
+section:nth-child(5) article {
   transform: rotate(0deg);
   transform-origin: center;
   display: flex;
@@ -29,7 +29,7 @@ section[name='bubbles-pop'] article {
 }
 
 @media (max-width: 450px) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     transform: rotate(360deg);
     /* gap: 1em; */
     /* width: 15em; */
@@ -37,12 +37,12 @@ section[name='bubbles-pop'] article {
     transition: all 500ms ease-in-out;
   }
 
-  section[name='bubbles-pop'] article div:nth-child(even) {
+  section:nth-child(5) article div:nth-child(even) {
     padding: .2em;
     margin: .5em;
   }
 
-  section[name='bubbles-pop'] article div {
+  section:nth-child(5) article div {
     height: 2em;
     width: 2em;
   }
@@ -50,7 +50,7 @@ section[name='bubbles-pop'] article {
 
 
 @media (min-width: 450px) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     transform: rotate(360deg);
     /* gap: 1em; */
     width: 60%;
@@ -58,20 +58,20 @@ section[name='bubbles-pop'] article {
     transition: all 500ms ease-in-out;
   }
 
-  section[name='bubbles-pop'] article div:nth-child(even) {
+  section:nth-child(5) article div:nth-child(even) {
     /* margin: .2em; */
     padding: .2em;
     margin: .5em;
   }
 
-  section[name='bubbles-pop'] article div {
+  section:nth-child(5) article div {
     height: 2em;
     width: 2em;
   }
 }
 
 @media (min-width: 1050px) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     height: 20em;
     width: 35em;
     padding: 1.2em;
@@ -81,7 +81,7 @@ section[name='bubbles-pop'] article {
     transition: all 500ms ease-in-out;
   }
 
-  section[name='bubbles-pop'] article div:nth-child(even) {
+  section:nth-child(5) article div:nth-child(even) {
     /* transform: translateZ(3px) scale(2);
     transform-style: preserve-3d; */
     /* margin: .2em; */
@@ -91,7 +91,7 @@ section[name='bubbles-pop'] article {
 }
 
 @media (min-width: 1400px) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     height: 40em;
     width: 70%;
     transform: rotate(-660deg);
@@ -99,7 +99,7 @@ section[name='bubbles-pop'] article {
     transition: all 500ms ease-in-out;
   }
 
-  section[name='bubbles-pop'] article div:nth-child(even) {
+  section:nth-child(5) article div:nth-child(even) {
     /* transform: translateZ(3px) scale(2);
     transform-style: preserve-3d; */
     margin: 2em;
@@ -109,7 +109,7 @@ section[name='bubbles-pop'] article {
 
 
 @media (orientation: landscape) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     /* flex-direction: row; */
     /* height:50vh; */
     /* width: 100vw; */
@@ -117,7 +117,7 @@ section[name='bubbles-pop'] article {
 }
 
 @media (orientation: portrait) {
-  section[name='bubbles-pop'] article {
+  section:nth-child(5) article {
     /* flex-direction: column; */
     /* height:100vh; */
     /* width: 50vw; */
@@ -126,29 +126,11 @@ section[name='bubbles-pop'] article {
 
 
 
-section[name='bubbles-pop'] article div {
+section:nth-child(5) article div {
   width: 50px;
   height: 50px;
   background-color: aquamarine;
-  /* background: radial-gradient(
-    circle,
-    rgba(195, 88, 34, 0) 0%,
-    rgba(83, 43, 193, 0) 4%,
-    rgba(193, 191, 52, 0) 8%,
-    rgba(69, 65, 193, 0) 18%,
-    rgba(193, 178, 79, 0) 29%,
-    rgba(83, 43, 193, 0) 35%,
-    rgba(115, 191, 139, 0) 43%,
-    
-    rgba(83, 43, 193, 0) 50%,
-    rgba(195, 88, 34, 0) 62%,
-    rgba(186, 189, 91, 0) 72%,
-    rgba(130, 191, 129, 0) 75%,
-    rgba(205, 188, 78, 0) 80%,
-    rgba(83, 43, 193, 0) 85%,
-    rgba(227, 188, 63,0) 100%
-  ); */
-  /* background-color: rgb(238,174,202); */
+
   background: radial-gradient(circle,
       rgba(238, 174, 202, 1) 0%,
       rgba(148, 187, 233, 1) 100%);
@@ -164,15 +146,15 @@ section[name='bubbles-pop'] article div {
   transition: all 1s ease-in 200ms;
 }
 
-section[name='bubbles-pop'] article div:nth-child(3n-1) {
+section:nth-child(5) article div:nth-child(3n-1) {
   /* margin: 0.7em; */
 }
 
-section[name='bubbles-pop'] article div:nth-child(even) {
+section:nth-child(5) article div:nth-child(even) {
   /* margin: 1em; */
 }
 
-section[name='bubbles-pop'] article div:is(:hover, :focus) {
+section:nth-child(5) article div:is(:hover, :focus) {
   background-color: rgb(252, 176, 69);
   background: radial-gradient(circle,
       rgba(252, 176, 69, 1) 14%,
