@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-section[name='second-fw'] div {
+section[name='dancing-title'] div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +22,7 @@ section[name='second-fw'] div {
   font-size: 4vw;
 }
 
-section[name='second-fw'] div h1 {
+section[name='dancing-title'] div h1 {
   font-variation-settings: 'XROT' 20, 'YROT' 30;
   font-size: 3em;
   -ms-flex-item-align: center;
@@ -51,13 +51,13 @@ section[name='second-fw'] div h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  section[name='second-fw'] div h1 {
+  section[name='dancing-title'] div h1 {
     -webkit-animation: FontVars 5s infinite linear both;
             animation: FontVars 5s infinite linear both;
   }
 }
 
-section[name='second-fw'] {
+section[name='dancing-title'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +71,7 @@ section[name='second-fw'] {
 }
 
 @media (prefers-color-scheme: dark) {
-  section[name='second-fw'] div h1 {
+  section[name='dancing-title'] div h1 {
     /* background: none; */
     background-image: -o-radial-gradient(
       circle,

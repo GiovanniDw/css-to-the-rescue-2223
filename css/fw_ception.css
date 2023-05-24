@@ -4,13 +4,13 @@ section input[value='firework']:checked {
   /* border: 1px solid red; */
 }
 
-section[name='first-fw'] {
+section[name='fireworks-ception'] {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #0E00AC 0%, #222ABB 10.82%, #65B2EA 64.47%, #6CC1EF 83.22%, #83F0FF 100%);
 }
 
-section[name='first-fw'] > div {
+section[name='fireworks-ception'] > div {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -28,12 +28,12 @@ input[type='checkbox'] {
   appearance: initial;
 }
 
-section[name='first-fw'] input {
+section[name='fireworks-ception'] input {
   z-index: 999;
   display: block;
 }
 
-section[name='first-fw'] input[value='firework'] {
+section[name='fireworks-ception'] input[value='firework'] {
   position: absolute;
   bottom: 1em;
   left: 50%;
@@ -56,51 +56,49 @@ input[value='firework']:before {
   height: 100px;
   width: 25px;
 }
+
 input[value='firework']:checked:before {
   content: url(../assets/images/Lighter.svg);
 }
 
-section[name='first-fw'] input[value='firework']:checked ~ div > div {
+section[name='fireworks-ception'] input[value='firework']:checked ~ div > div {
   animation: fireworks 3s ease-out infinite;
 }
 
-section[name='first-fw'] input[value='firework']:checked ~ div div > div {
+section[name='fireworks-ception'] input[value='firework']:checked ~ div div > div {
   animation: fireworks-ception 3s ease-out infinite;
 }
-section[name='first-fw'] input[value='firework']:checked ~ section {
+
+section[name='fireworks-ception'] input[value='firework']:checked ~ section {
   height: 2em;
   width: 2em;
   background: #000;
 }
 
-section[name='first-fw']:has(input[value='firework']) {
+section[name='fireworks-ception']:has(input[value='firework']) {
   position: relative;
   width: auto;
-  background: linear-gradient(
-    180deg,
-    #0e00ac 0%,
-    #222abb 10.82%,
-    #65b2ea 64.47%,
-    #6cc1ef 83.22%,
-    #83f0ff 100%
-  );
+  background: linear-gradient(180deg,
+      #0e00ac 0%,
+      #222abb 10.82%,
+      #65b2ea 64.47%,
+      #6cc1ef 83.22%,
+      #83f0ff 100%);
   transition: background 1s ease-out;
 }
 
-section[name='first-fw']:has(input[value='firework']:checked) {
-  background: linear-gradient(
-    180deg,
-    #0e00ac 0%,
-    #222abb 10.82%,
-    #65b2ea 64.47%,
-    #6cc1ef 83.22%,
-    #83f0ff 100%
-  );
+section[name='fireworks-ception']:has(input[value='firework']:checked) {
+  background: linear-gradient(180deg,
+      #0e00ac 0%,
+      #222abb 10.82%,
+      #65b2ea 64.47%,
+      #6cc1ef 83.22%,
+      #83f0ff 100%);
   /* background: linear-gradient(180deg, #000000 0%, #0e01ac 100%); */
   transition: background 1s ease-out;
 }
 
-section[name='first-fw'] div div {
+section[name='fireworks-ception'] div div {
   z-index: 1;
   position: absolute;
   width: 1em;
@@ -112,7 +110,7 @@ section[name='first-fw'] div div {
   left: 50%;
 }
 
-section[name='first-fw'] div div div {
+section[name='fireworks-ception'] div div div {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -126,71 +124,76 @@ section[name='first-fw'] div div div {
   /* left: 50%; */
   /* top: 50%; */
 }
-section[name='first-fw'] div div:not(:nth-child(6)),
-section[name='first-fw'] div div div {
+
+section[name='fireworks-ception'] div div:not(:nth-child(6)),
+section[name='fireworks-ception'] div div div {
   opacity: 0;
 }
 
-section[name='first-fw'] div div:nth-child(1),
-section[name='first-fw'] div div div:nth-child(1) {
+section[name='fireworks-ception'] div div:nth-child(1),
+section[name='fireworks-ception'] div div div:nth-child(1) {
   top: 50%;
   left: 50%;
   background: var(--color-green);
 }
 
-section[name='first-fw'] div div:nth-child(2),
-section[name='first-fw'] div div div:nth-child(2) {
+section[name='fireworks-ception'] div div:nth-child(2),
+section[name='fireworks-ception'] div div div:nth-child(2) {
   top: 10%;
   left: 50%;
   background: var(--color-green);
 }
-section[name='first-fw'] div div:nth-child(3),
-section[name='first-fw'] div div div:nth-child(3) {
+
+section[name='fireworks-ception'] div div:nth-child(3),
+section[name='fireworks-ception'] div div div:nth-child(3) {
   top: 25%;
   left: 75%;
   background: var(--color-purple);
 }
-section[name='first-fw'] div div:nth-child(4),
-section[name='first-fw'] div div div:nth-child(4) {
+
+section[name='fireworks-ception'] div div:nth-child(4),
+section[name='fireworks-ception'] div div div:nth-child(4) {
   top: 50%;
   left: 90%;
   background: var(--color-green);
 }
-section[name='first-fw'] div div:nth-child(5),
-section[name='first-fw'] div div div:nth-child(5) {
+
+section[name='fireworks-ception'] div div:nth-child(5),
+section[name='fireworks-ception'] div div div:nth-child(5) {
   top: 75%;
   left: 75%;
   background-color: #1cb5e0;
 }
 
-section[name='first-fw'] div div:nth-child(6),
-section[name='first-fw'] div div div:nth-child(6) {
+section[name='fireworks-ception'] div div:nth-child(6),
+section[name='fireworks-ception'] div div div:nth-child(6) {
   top: 90%;
   left: 50%;
   background: black;
 }
 
-section[name='first-fw'] div div:nth-child(7),
-section[name='first-fw'] div div div:nth-child(7) {
+section[name='fireworks-ception'] div div:nth-child(7),
+section[name='fireworks-ception'] div div div:nth-child(7) {
   top: 75%;
   left: 25%;
   background: var(--color-orange);
 }
 
-section[name='first-fw'] div div:nth-child(8),
-section[name='first-fw'] div div div:nth-child(8) {
+section[name='fireworks-ception'] div div:nth-child(8),
+section[name='fireworks-ception'] div div div:nth-child(8) {
   top: 50%;
   left: 10%;
   background: var(--color-yellow);
 }
-section[name='first-fw'] div div:nth-child(9),
-section[name='first-fw'] div div div:nth-child(9) {
+
+section[name='fireworks-ception'] div div:nth-child(9),
+section[name='fireworks-ception'] div div div:nth-child(9) {
   top: 25%;
   left: 25%;
   background: var(--color-blue);
 }
 
-section[name='first-fw'] footer {
+section[name='fireworks-ception'] footer {
   position: absolute;
   border-radius: 50% 50% 0 0;
   bottom: 0;
@@ -208,25 +211,30 @@ section[name='first-fw'] footer {
     top: 90%;
     left: 50%;
   }
+
   10% {
     opacity: 1;
     transform: scale(0.2);
     top: 50%;
     left: 50%;
   }
+
   20% {
     opacity: 1;
     transform: scale(0.5);
   }
+
   50% {
     opacity: 0.8;
     transform: scale(1.5);
   }
+
   90% {
     opacity: 0.5;
     transform: scale(1);
     background-color: transparent;
   }
+
   100% {
     opacity: 0;
     transform: scale(4);
@@ -241,31 +249,37 @@ section[name='first-fw'] footer {
     top: 90%;
     left: 50%;
   }
+
   10% {
     opacity: 0;
     transform: scale(0.5);
     top: 50%;
     left: 50%;
   }
+
   20% {
     opacity: 0;
     transform: scale(0.5);
   }
+
   50% {
     opacity: 0;
     transform: scale(0.1);
   }
+
   70% {
     opacity: 0.5;
     top: 50%;
     left: 50%;
     transform: scale(0.5);
   }
+
   80% {
     /* z-index: 999; */
     opacity: 0.5;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1);

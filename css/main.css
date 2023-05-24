@@ -97,7 +97,7 @@ main {
   scroll-snap-type: y mandatory;
 }
 
- section {
+section {
   /* position: sticky; */
   top: 0;
 
@@ -115,21 +115,22 @@ section {
 }
 
 section:nth-child(1) {
+  border: 10px solid blue;
   display: flex;
   align-content: center;
   justify-content: space-around;
 }
-
+/* 
 section[name="fourth-fw"] ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
-}
+} */
 
 ul li {
   list-style: none;
 }
-
+/* 
 section[name="fourth-fw"] ul li {
   background-color: red;
   width: 1em;
@@ -138,10 +139,10 @@ section[name="fourth-fw"] ul li {
   margin: 1em;
 
   animation-duration: 3s;
-  /* animation-name: slidein; */
+  animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+} */
 
 @keyframes slidein {
   from {
@@ -154,15 +155,16 @@ section[name="fourth-fw"] ul li {
     width: 100%;
   }
 }
+
 /* 
 section > div {
   position: relative;
   width: 100%;
   /* height: 50%; */
-  /* margin: 0 auto; */
+/* margin: 0 auto; */
 /* }  */
 
-section[name='third-fw'] {
+section:nth-child(1) {
   /* background: linear-gradient(
     180deg,
     #5b211d 0%,
@@ -173,7 +175,7 @@ section[name='third-fw'] {
     #542118 100%
   ); */
   background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
-  
+
   transition: background 1s ease-out;
   position: relative;
   /* background-image: linear-gradient(black, rgb(8, 8, 70)); */
@@ -181,10 +183,10 @@ section[name='third-fw'] {
   overflow: hidden;
 }
 
-section[name='third-fw'] span:nth-child(1),
-section[name='third-fw'] span:nth-child(2),
-section[name='third-fw'] span:nth-child(3),
-section[name='third-fw'] span:nth-child(4) {
+section:nth-child(1) span:nth-child(1),
+section:nth-child(1) span:nth-child(2),
+section:nth-child(1) span:nth-child(3),
+section:nth-child(1) span:nth-child(4) {
   display: block;
   position: absolute;
   top: 20%;
@@ -226,42 +228,46 @@ section[name='third-fw'] span:nth-child(4) {
   z-index: 99999;
 }
 
-section[name='third-fw'] span:nth-child(2) {
+section:nth-child(1) span:nth-child(2) {
   top: 30%;
   left: 30%;
   /* transform: translate(10%, 30%); */
   animation-delay: 0.5s;
 }
-section[name='third-fw'] span:nth-child(3) {
+
+section:nth-child(1) span:nth-child(3) {
   top: 80%;
   left: 70%;
   animation-delay: 0.75s;
 }
-section[name='third-fw'] span:nth-child(4) {
+
+section:nth-child(1) span:nth-child(4) {
   top: 70%;
   left: 20%;
   animation-delay: 1.75s;
 }
 
-section[name='third-fw'] {
+section:nth-child(1) {
   container-type: inline-size;
   width: 100%;
 }
 
 @container (width < 500px) {
-  section[name='third-fw'] span:nth-child(2) {
+  section:nth-child(1) span:nth-child(2) {
     opacity: 0;
     background-image: none;
   }
 }
+
 @container (width < 800px) {
-  section[name='third-fw'] span:nth-child(3) {
+  section:nth-child(1) span:nth-child(3) {
     opacity: 0;
     background-image: none;
   }
 }
+
 @container (width < 1200px) {
-  section[name='third-fw'] span:nth-child(4) {
+  section:nth-child(1) span:nth-child(4) {
     opacity: 0;
     background-image: none;
   }
@@ -274,16 +280,19 @@ section[name='third-fw'] {
     opacity: 0;
     transform: translateY(100vh);
   }
+
   50% {
     width: 10px;
     height: 10px;
     opacity: 1;
   }
+
   75% {
     width: 10px;
     height: 10px;
     opacity: 1;
   }
+
   100% {
     width: 250px;
     height: 250px;

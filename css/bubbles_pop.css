@@ -1,26 +1,24 @@
-section[name='fifth-fw'] {
-  background: conic-gradient(
-    from 0deg at 50% 50%,
-    #d52e32 -43.44deg,
-    #d52e32 46.34deg,
-    #ff6b00 179.37deg,
-    #d52e32 316.56deg,
-    #d52e32 406.34deg
-  );
+section[name='bubbles-pop'] {
+  background: conic-gradient(from 0deg at 50% 50%,
+      #d52e32 -43.44deg,
+      #d52e32 46.34deg,
+      #ff6b00 179.37deg,
+      #d52e32 316.56deg,
+      #d52e32 406.34deg);
 
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   /* min-height: 100vh; */
-  
+
 }
 
-section[name='fifth-fw'] article {
+section[name='bubbles-pop'] article {
   transform: rotate(0deg);
   transform-origin: center;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: space;
   justify-content: space-around;
   /* grid-template-columns: minmax(0, 1fr 1fr) minmax(0,1fr) minmax(0,1fr); */
@@ -31,18 +29,20 @@ section[name='fifth-fw'] article {
 }
 
 @media (max-width: 450px) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     transform: rotate(360deg);
     /* gap: 1em; */
     /* width: 15em; */
     /* height: 10em; */
     transition: all 500ms ease-in-out;
   }
-  section[name='fifth-fw'] article div:nth-child(even) {
+
+  section[name='bubbles-pop'] article div:nth-child(even) {
     padding: .2em;
     margin: .5em;
   }
-  section[name='fifth-fw'] article div {
+
+  section[name='bubbles-pop'] article div {
     height: 2em;
     width: 2em;
   }
@@ -50,35 +50,38 @@ section[name='fifth-fw'] article {
 
 
 @media (min-width: 450px) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     transform: rotate(360deg);
     /* gap: 1em; */
     width: 60%;
     height: 50%;
     transition: all 500ms ease-in-out;
   }
-  section[name='fifth-fw'] article div:nth-child(even) {
+
+  section[name='bubbles-pop'] article div:nth-child(even) {
     /* margin: .2em; */
     padding: .2em;
     margin: .5em;
   }
-  section[name='fifth-fw'] article div {
+
+  section[name='bubbles-pop'] article div {
     height: 2em;
     width: 2em;
   }
 }
 
 @media (min-width: 1050px) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     height: 20em;
     width: 35em;
     padding: 1.2em;
-    
+
     transform: rotate(-280deg);
     /* gap: 1em; */
     transition: all 500ms ease-in-out;
   }
-  section[name='fifth-fw'] article div:nth-child(even) {
+
+  section[name='bubbles-pop'] article div:nth-child(even) {
     /* transform: translateZ(3px) scale(2);
     transform-style: preserve-3d; */
     /* margin: .2em; */
@@ -86,15 +89,17 @@ section[name='fifth-fw'] article {
     padding: 1.2em;
   }
 }
+
 @media (min-width: 1400px) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     height: 40em;
     width: 70%;
     transform: rotate(-660deg);
     /* gap: 1em; */
     transition: all 500ms ease-in-out;
   }
-  section[name='fifth-fw'] article div:nth-child(even) {
+
+  section[name='bubbles-pop'] article div:nth-child(even) {
     /* transform: translateZ(3px) scale(2);
     transform-style: preserve-3d; */
     margin: 2em;
@@ -104,7 +109,7 @@ section[name='fifth-fw'] article {
 
 
 @media (orientation: landscape) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     /* flex-direction: row; */
     /* height:50vh; */
     /* width: 100vw; */
@@ -112,7 +117,7 @@ section[name='fifth-fw'] article {
 }
 
 @media (orientation: portrait) {
-  section[name='fifth-fw'] article {
+  section[name='bubbles-pop'] article {
     /* flex-direction: column; */
     /* height:100vh; */
     /* width: 50vw; */
@@ -121,7 +126,7 @@ section[name='fifth-fw'] article {
 
 
 
-section[name='fifth-fw'] article div {
+section[name='bubbles-pop'] article div {
   width: 50px;
   height: 50px;
   background-color: aquamarine;
@@ -144,11 +149,9 @@ section[name='fifth-fw'] article div {
     rgba(227, 188, 63,0) 100%
   ); */
   /* background-color: rgb(238,174,202); */
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%);
 
   border-radius: 100%;
   text-align: center;
@@ -161,24 +164,22 @@ section[name='fifth-fw'] article div {
   transition: all 1s ease-in 200ms;
 }
 
-section[name='fifth-fw'] article div:nth-child(3n-1) {
+section[name='bubbles-pop'] article div:nth-child(3n-1) {
   /* margin: 0.7em; */
 }
 
-section[name='fifth-fw'] article div:nth-child(even) {
+section[name='bubbles-pop'] article div:nth-child(even) {
   /* margin: 1em; */
 }
 
-section[name='fifth-fw'] article div:is(:hover, :focus) {
+section[name='bubbles-pop'] article div:is(:hover, :focus) {
   background-color: rgb(252, 176, 69);
-  background: radial-gradient(
-    circle,
-    rgba(252, 176, 69, 1) 14%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(253, 34, 34, 1) 90%,
-    rgba(255, 255, 255, 1) 95%,
-    rgba(131, 58, 180, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(252, 176, 69, 1) 14%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(253, 34, 34, 1) 90%,
+      rgba(255, 255, 255, 1) 95%,
+      rgba(131, 58, 180, 1) 100%);
   transform: scale(2.6);
   opacity: 0.6;
 

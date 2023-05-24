@@ -1,5 +1,9 @@
+/* section:nth-child(4) */
 
-section[name='sixth-fw'] {
+/* section:nth-child(4) */
+
+section:nth-child(4) {
+  /* border: 5em solid blue; */
   -moz-appearance: initial;
   appearance: initial;
   position: relative;
@@ -13,7 +17,7 @@ section[name='sixth-fw'] {
   );
 }
 
-section[name='sixth-fw']::before {
+section:nth-child(4)::before {
 
   /* position: absolute; */
   /* display: inline; */
@@ -35,20 +39,20 @@ section[name='sixth-fw']::before {
   /* transform-style: preserve-3d; */
 }
 
-section[name='sixth-fw'] article[name='bubbles'] {
+section:nth-child(4) article {
   top: 2em;
   position: relative;
   display: flex;
   z-index: -1;
 }
 
-article[name='bubbles'] span {
+section:nth-child(4) article span {
   position: relative;
   width: 30px;
   height: 30px;
   background: var(--color-blue);
   margin: 0 4px;
-  border-radius: 50%;
+  border-radius: 100%;
   box-shadow: 0 0 0 10px var(--color-blue-dark),
     0 0 0 50px var(--color-blue-light), 0 0 0 100px var(--color-green);
   animation: bubbles 15s linear infinite;
@@ -56,7 +60,7 @@ article[name='bubbles'] span {
   opacity: 0.5;
 }
 
-article[name='bubbles'] span:nth-child(even) {
+section:nth-child(4) span:nth-child(even) {
   background: var(--color-red);
   box-shadow: 0 0 0 10px var(--color-red), 0 0 0 50px var(--color-yellow),
     0 0 0 100px var(--color-purple);

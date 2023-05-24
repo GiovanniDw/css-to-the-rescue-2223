@@ -213,7 +213,7 @@ section input[value='firework']:checked ~ section {
   background: #000;
 }
 
-section[name='first-fw']:has(input[value='firework']) {
+section[name='fireworks-ception']:has(input[value='firework']) {
   position: relative;
   width: auto;
   background: -webkit-gradient(
@@ -246,7 +246,7 @@ section[name='first-fw']:has(input[value='firework']) {
   transition: background 1s ease-out;
 }
 
-section[name='first-fw']:has(input[value='firework']:checked) {
+section[name='fireworks-ception']:has(input[value='firework']:checked) {
   background: -webkit-gradient(
     linear,
     left top, left bottom,
@@ -280,7 +280,7 @@ section[name='first-fw']:has(input[value='firework']:checked) {
   transition: background 1s ease-out;
 }
 
-section[name='first-fw'] div div {
+section[name='fireworks-ception'] div div {
   z-index: 1;
   position: absolute;
   width: 1em;
@@ -289,7 +289,7 @@ section[name='first-fw'] div div {
   background-color: #f00;
 }
 
-section[name='first-fw'] div div div {
+section[name='fireworks-ception'] div div div {
   position: absolute;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
@@ -301,72 +301,72 @@ section[name='first-fw'] div div div {
   /* left: 50%; */
   /* top: 50%; */
 }
-section[name='first-fw'] div div:not(:nth-child(6)),
-section[name='first-fw'] div div div {
+section[name='fireworks-ception'] div div:not(:nth-child(6)),
+section[name='fireworks-ception'] div div div {
   opacity: 0;
 }
 
-section[name='first-fw'] div div:nth-child(1),
-section[name='first-fw'] div div div:nth-child(1) {
+section[name='fireworks-ception'] div div:nth-child(1),
+section[name='fireworks-ception'] div div div:nth-child(1) {
   top: 50%;
   left: 50%;
   background: var(--color-green);
 }
 
-section[name='first-fw'] div div:nth-child(2),
-section[name='first-fw'] div div div:nth-child(2) {
+section[name='fireworks-ception'] div div:nth-child(2),
+section[name='fireworks-ception'] div div div:nth-child(2) {
   top: 10%;
   left: 50%;
   background: var(--color-green);
 }
-section[name='first-fw'] div div:nth-child(3),
-section[name='first-fw'] div div div:nth-child(3) {
+section[name='fireworks-ception'] div div:nth-child(3),
+section[name='fireworks-ception'] div div div:nth-child(3) {
   top: 25%;
   left: 75%;
   background: var(--color-purple);
 }
-section[name='first-fw'] div div:nth-child(4),
-section[name='first-fw'] div div div:nth-child(4) {
+section[name='fireworks-ception'] div div:nth-child(4),
+section[name='fireworks-ception'] div div div:nth-child(4) {
   top: 50%;
   left: 90%;
   background: var(--color-green);
 }
-section[name='first-fw'] div div:nth-child(5),
-section[name='first-fw'] div div div:nth-child(5) {
+section[name='fireworks-ception'] div div:nth-child(5),
+section[name='fireworks-ception'] div div div:nth-child(5) {
   top: 75%;
   left: 75%;
   background-color: #1cb5e0;
 }
 
-section[name='first-fw'] div div:nth-child(6),
-section[name='first-fw'] div div div:nth-child(6) {
+section[name='fireworks-ception'] div div:nth-child(6),
+section[name='fireworks-ception'] div div div:nth-child(6) {
   top: 90%;
   left: 50%;
   background: black;
   background-image: url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fireworks/Firework_Rocket_Transparent_Image.png');
 }
 
-section[name='first-fw'] div div:nth-child(7),
-section[name='first-fw'] div div div:nth-child(7) {
+section[name='fireworks-ception'] div div:nth-child(7),
+section[name='fireworks-ception'] div div div:nth-child(7) {
   top: 75%;
   left: 25%;
   background: var(--color-orange);
 }
 
-section[name='first-fw'] div div:nth-child(8),
-section[name='first-fw'] div div div:nth-child(8) {
+section[name='fireworks-ception'] div div:nth-child(8),
+section[name='fireworks-ception'] div div div:nth-child(8) {
   top: 50%;
   left: 10%;
   background: var(--color-yellow);
 }
-section[name='first-fw'] div div:nth-child(9),
-section[name='first-fw'] div div div:nth-child(9) {
+section[name='fireworks-ception'] div div:nth-child(9),
+section[name='fireworks-ception'] div div div:nth-child(9) {
   top: 25%;
   left: 25%;
   /* background: var(--color-blue); */
 }
 
-section[name='first-fw'] footer {
+section[name='fireworks-ception'] footer {
   position: absolute;
   border-radius: 50% 50% 0 0;
   bottom: 0;
@@ -540,7 +540,7 @@ section[name='first-fw'] footer {
   }
 }
 
-section[name='third-fw'] {
+section:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#0e01ac));
   background: -o-linear-gradient(top, #000000 0%, #0e01ac 100%);
   background: linear-gradient(180deg, #000000 0%, #0e01ac 100%);
@@ -555,10 +555,10 @@ section[name='third-fw'] {
   overflow: hidden;
 }
 
-section[name='third-fw'] span:nth-child(1),
-section[name='third-fw'] span:nth-child(2),
-section[name='third-fw'] span:nth-child(3),
-section[name='third-fw'] span:nth-child(4) {
+section:nth-child(1) span:nth-child(1),
+section:nth-child(1) span:nth-child(2),
+section:nth-child(1) span:nth-child(3),
+section:nth-child(1) span:nth-child(4) {
   display: block;
   position: absolute;
   top: 40%;
@@ -624,42 +624,42 @@ section[name='third-fw'] span:nth-child(4) {
   z-index: 5;
 }
 
-section[name='third-fw'] span:nth-child(2) {
+section:nth-child(1) span:nth-child(2) {
   top: 50%;
   left: 30%;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-section[name='third-fw'] span:nth-child(3) {
+section:nth-child(1) span:nth-child(3) {
   top: 20%;
   left: 70%;
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
-section[name='third-fw'] span:nth-child(4) {
+section:nth-child(1) span:nth-child(4) {
   top: 70%;
   left: 20%;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
 }
 
-section[name='third-fw'] {
+section:nth-child(1) {
   container-type: inline-size;
   width: 100%;
 }
 
 @container (width < 500px) {
-  section[name='third-fw'] span:nth-child(2) {
+  section:nth-child(1) span:nth-child(2) {
     display: none;
   }
 }
 @container (width < 800px) {
-  section[name='third-fw'] span:nth-child(3) {
+  section:nth-child(1) span:nth-child(3) {
     display: none;
   }
 }
 @container (width < 1200px) {
-  section[name='third-fw'] span:nth-child(4) {
+  section:nth-child(1) span:nth-child(4) {
     display: none;
   }
 }
@@ -707,7 +707,7 @@ section[name='third-fw'] {
     opacity: 0;
   }
 }
-section[name='fifth-fw'] {
+section[name='bubbles-pop'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +719,7 @@ section[name='fifth-fw'] {
           align-items: center;
 }
 
-section[name='fifth-fw'] article {
+section[name='bubbles-pop'] article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,7 +730,7 @@ section[name='fifth-fw'] article {
   padding: 0;
 }
 
-section[name='fifth-fw'] article div {
+section[name='bubbles-pop'] article div {
   width: 50px;
   height: 50px;
   background-color: aquamarine;
@@ -777,7 +777,7 @@ section[name='fifth-fw'] article div {
   transition: all 1s ease-in 200ms;
 }
 
-section[name='fifth-fw'] article div:is(:hover, :focus) {
+section[name='bubbles-pop'] article div:is(:hover, :focus) {
   background-color: rgb(252, 176, 69);
   background: -o-radial-gradient(
     circle,
