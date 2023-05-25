@@ -1,6 +1,6 @@
-### CSS To The Rescue
+## CSS To The Rescue
 > 
-####  Contents  
+###  Contents  
 - [Assignment](#assignment)
   - [Leerdoelen](#leerdoelen)
   - [Rubic](#rubic)
